@@ -17,7 +17,7 @@ get_template_part('template-parts/about-us/about-mission', 'about-mission');
 
 get_template_part('template-parts/home/supporter-slider-view', 'supporter-slider-view');
 
-get_template_part('template-parts/home/contact-us-view', 'contact-us-view');
+get_template_part('template-parts/about-us/contact-us-view', 'about-us-contact-us-view');
 
 get_footer('home');
 

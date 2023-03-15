@@ -73,6 +73,16 @@ nav ul li {
   transition: 2s ease-in-out;
 }
 
+.round-btn {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 20px 0px;
+  display: flex;
+  color: black;
+  border: 0px;
+}
+
 .about_us_btn {
   background-color: white;
   color: rgb(84, 179, 84);
@@ -83,7 +93,8 @@ nav ul li {
   display: flex;
 }
 
-.about_us_btn:hover {
+.about_us_btn:hover,
+.round-btn:hover {
   background-color: rgb(84, 179, 84);
   border: 1px solid transparent;
   color: white;
