@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @package Wordpress
+ * @subpackage Our mission view section
+ * @since 1.0
+ */
+
+?>
+
+<? $post_title = get_post_field('post_title',95);?>
+<? $content_post = get_post_field('post_content',95);?>
+
+
+<div class="our-mission-view col-lg-6 col-12">
+    <h3><? $post_title ?></h3>
+    <p> <? $content_post ?> </p>
+</div>
