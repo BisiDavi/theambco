@@ -18,7 +18,7 @@
             if ($leadershipPost->have_posts()) {
                 while ($leadershipPost->have_posts()) {
                     $leadershipPost->the_post();
-                    get_template_part('template-parts/home/hero-slider', 'hero-slider');
+                    get_template_part('template-parts/about-us/our-leadership', 'our-leadership');
                 }
             } 
         ?>
