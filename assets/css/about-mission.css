@@ -8,3 +8,7 @@
 .our-mission-view {
   background-color: rgba(218, 203, 71, 0.3);
 }
+
+.our-mission-view .mission-item {
+  margin: 0px;
+}

@@ -13,6 +13,6 @@
 
 
 <div class="our-mission-view col-lg-6 col-12 p-5">
-    <h3><? echo $post_title; ?></h3>
+    <h3 class="text-center"><? echo $post_title; ?></h3>
     <p> <? echo $content_post; ?> </p>
 </div>

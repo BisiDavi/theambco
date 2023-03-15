@@ -132,7 +132,7 @@ nav ul li {
   border-radius: 30px;
 }
 
-.wp-block-columns {
+.home_contact_us .wp-block-columns {
   gap: 140px;
   justify-content: center;
   font-family: "Source Sans Pro", sans-serif;
@@ -209,7 +209,7 @@ main.container-fluid {
 
 .content-text.col-lg-4 ul li {
   list-style: none;
-} 
+}
 
 footer.footer {
   background: #3f3d56;
