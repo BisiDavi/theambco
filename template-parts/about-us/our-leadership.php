@@ -9,7 +9,7 @@
 ?>
 
 <div class="our-leadership">
-    <div class="container mx-auto d-flex py-5 py-lg-0 m-3">
+    <div class="container mx-auto d-flex justify-content-between py-5 py-lg-0 m-3">
         <? $postArgs = array(
             'post_type' => 'post', 
             'cat' => 13, 
