@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+li.current-menu-item a {
+  color: red;
+}
+
+.show-mobile {
+  display: none;
+}
+
+/* nav */
+nav li a {
+  text-decoration: none;
+  font-family: "Proxima Nova", Helvetica, sans-serif;
+  color: #2e313a;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0px 20px;
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.col-12.nav-container {
+  height: 50px;
+  margin: 0px;
+}
+
+/* swiper_slider */
+.swiper_slider {
+  padding-top: 50px;
+}
+
+/* about-us */
+.about-us {
+  background-color: white;
+}
+.about-us .about_img {
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.about-us ul {
+  margin-left: 20px;
+  display: none;
+  transition: 2s ease-in-out;
+}
+
+.about_us_btn {
+  background-color: white;
+  color: rgb(84, 179, 84);
+  border-radius: 10px;
+  border: 1px solid rgb(84, 179, 84);
+  padding: 10px 30px;
+  margin: 20px 0px;
+  display: flex;
+}
+
+.about_us_btn:hover {
+  background-color: rgb(84, 179, 84);
+  border: 1px solid transparent;
+  color: white;
+  transition: background-color 1s ease-in-out;
+}
+
+.about_btn_group {
+  margin-top: 30px;
+}
+
+.about_btn_group a.read_more_link {
+  text-decoration: underline;
+  color: rgb(84, 179, 84);
+  border: none;
+}
+
+.about_btn_group a.read_more_link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* home_contact_us */
+.home_contact_us {
+  height: 750px;
+  position: relative;
+  padding: 60px 0px;
+}
+
+.home_contact_us .wp-block-column {
+  background-color: white;
+  max-width: 450px;
+  border-radius: 30px;
+  border-top-right-radius: 50px;
+}
+
+.home_contact_us .wp-block-column.text-content {
+  max-width: unset;
+  border-radius: 30px;
+  border-top-right-radius: unset;
+  padding: 0px 20px;
+}
+
+.home_contact_us .wp-block-columns img {
+  height: 400px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.wp-block-columns {
+  gap: 140px;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.wp-block-columns.text-group {
+  gap: unset;
+  margin-top: unset;
+}
+
+.home_contact_us .wp-block-column h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* supporters */
+.supporters h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* contact-us-view */
+.contact-us-view {
+  background-color: rgba(219, 204, 72, 0.933);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.contact-us-view .text-content {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* desktop view */
+.row.w-100.mx-auto {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.col-12.nav-container {
+  height: 100px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+}
+
+.col-12.page-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-container.mySwiper {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 120px;
+}
+
+main.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+.content-text.col-lg-4 ul li {
+  list-style: none;
+} 
+
+footer.footer {
+  background: #3f3d56;
+  padding: 2.5rem 1.5rem 0.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+footer.footer h4 {
+  font-size: 20px;
+}
+
+footer.footer ul {
+  padding: 0px;
+}
+
+footer.footer ul li {
+  list-style: none;
+}
+
+footer.footer ul li a {
+  color: white;
+}
+
+.footer .contact ul li {
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}

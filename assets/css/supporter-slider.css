@@ -1,0 +1,45 @@
+.sliderSwiper .swiper-wrapper .supporter img.wp-post-image {
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.sliderSwiperPagination {
+  margin: auto;
+}
+
+.sliderSwiperPagination .swiper-pagination-bullet {
+  margin: 0px 10px;
+}
+
+.paginate-slider {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.supporter-slider {
+  position: relative;
+}
+
+.supporter-slider .swiper-button-next,
+.supporter-slider .swiperButtonPrev {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.supporter-slider .swiper-button-next::after,
+.supporter-slider .swiper-button-prev::after {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .sliderSwiper .swiper-wrapper .supporter img.wp-post-image {
+    height: 120px;
+    width: 160px;
+  }
+}

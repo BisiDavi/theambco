@@ -1,0 +1,64 @@
+.swiper-slide img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 550px;
+  width: 100%;
+  z-index: 1;
+}
+
+.image_view {
+  position: relative;
+}
+
+.overlay {
+  background-color: #0000007a;
+  z-index: 2;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.mobile-hero-text {
+  display: none;
+}
+
+.banner_text {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.banner_text h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner_text p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .mobile-hero-text {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    color: white;
+    padding: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .mobile-hero-text h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .swiper-slide
+    img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: 500px;
+  }
+
+  .mobile-hero-text p {
+    font-size: 18px;
+  }
+}

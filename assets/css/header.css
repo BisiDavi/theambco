@@ -1,0 +1,51 @@
+.theambulance {
+  background-color: #f5f5f5;
+}
+
+.theambulance header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+  padding: 15px 0px;
+}
+
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav ul li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+.nav .logo a img {
+  height: 44px;
+  width: 150px;
+}
+
+.nav ul li a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0px;
+  }
+  .nav .show-mobile img {
+    height: 44px;
+    width: 150px;
+  }
+  .desktop {
+    display: none;
+  }
+  .sub-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
