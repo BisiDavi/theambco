@@ -15,6 +15,8 @@ get_template_part('template-parts/home/hero-banner', 'hero-banner');
 
 get_template_part('template-parts/about-us/about-mission', 'about-mission');
 
+get_template_part('template-parts/about-us/our-leadership', 'our-leadership');
+
 get_template_part('template-parts/home/supporter-slider-view', 'supporter-slider-view');
 
 get_template_part('template-parts/about-us/contact-us-view', 'about-us-contact-us-view');
