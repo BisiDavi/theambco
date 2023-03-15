@@ -11,7 +11,7 @@
 
 <div class="about-mission container-fluid">
     <div class="row">
-    <h3><? $post_title ?></h3>
-    <p> <? $content_post ?> </p>
+    <? get_template_part('template-parts/about-us/about-us-view', 'about-us-view'); ?>
+    <? get_template_part('template-parts/about-us/mission-view', 'mission-view'); ?>
     </div>
 </div>

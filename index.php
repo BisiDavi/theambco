@@ -22,3 +22,5 @@ get_template_part('template-parts/home/supporter-slider-view', 'supporter-slider
 get_template_part('template-parts/home/contact-us-view', 'contact-us-view');
 
 get_footer('home');
+
+?>
