@@ -8,8 +8,8 @@
 
 ?>
 
-<? $post_title = get_post_field('post_title',84);?>
-<? $content_post = get_post_field('post_content',84);?>
+<? $post_title = get_post_field('post_title',110);?>
+<? $content_post = get_post_field('post_content',110);?>
 
 
 <div class="container-fluid contact-us-view">
@@ -18,6 +18,6 @@
         <div class="text-content">
             <? echo $content_post; ?>
         </div>
-        <button class="button about_us_btn mx-auto mt-5">Contact us</button>
+        <button class="button btn mx-auto mt-5">Contact us</button>
     </div>
 </div>

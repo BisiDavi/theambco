@@ -5,10 +5,30 @@
   background-color: rgba(0, 77, 67, 0.3);
 }
 
+.about-us-view p {
+  font-size: 18px;
+}
+
 .our-mission-view {
   background-color: rgba(218, 203, 71, 0.3);
 }
 
 .our-mission-view .mission-item {
-  margin: 0px;
+  margin: 20px 0px;
+}
+
+.mission-item img {
+  width: 80px;
+}
+
+.wp-block-column.img-view {
+  flex-basis: 100px !important;
+}
+
+.mission-item p {
+  font-size: 18px;
+}
+
+.mission-item h3 {
+  font-size: 24px;
 }
