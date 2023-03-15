@@ -25,7 +25,7 @@ li.current-menu-item a {
 /* nav */
 nav li a {
   text-decoration: none;
-  font-family: "Proxima Nova", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #2e313a;
 }
 nav ul li {
@@ -42,7 +42,7 @@ nav ul {
 nav ul li {
   margin: 0px 20px;
   font-size: 20px;
-  font-family: "Open sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
