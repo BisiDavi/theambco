@@ -77,6 +77,16 @@
     transform-origin: left;
   }
 }
+
+ul#menu-header {
+  padding: 80px 0px;
+}
+
+#menu-header li a {
+  font-weight: 600;
+  font-size: 25px;
+}
+
 .hamburger-menu {
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -141,7 +151,7 @@
   padding: 10px 20px;
   width: 100%;
   background: #001e8e;
-  background: linear-gradient(to bottom, #0606069c 0%, #c1bdc0 100%);
+  background: linear-gradient(to bottom, #060606c4 0%, #abaaab 100%);
   margin: 0;
   position: fixed;
   top: 0px;
@@ -190,3 +200,5 @@ li.closemenu {
     border-bottom: 1px solid white;
   }
 }
+
+/* linear-gradient(to bottom, #0606069c 0%, #c1bdc0 100%); */
