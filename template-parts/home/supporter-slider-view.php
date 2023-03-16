@@ -8,12 +8,18 @@
 
 ?>
 
+
 <? $post_title = get_post_field('post_title',53);?>
 <? $content_post = get_post_field('post_content',53);?>
+<? global $wp; ?>
 
 <div class="supporter-slider-view py-lg-5">
     <div class="container supporters py-5">
         <h3><? echo $post_title ?></h3>
+        <? if($wp->request === "about-us"){ ?>
+        <? echo $content_post; ?>
+        <? }?>
+
         <div class="supporter-slider mt-5">
             <div class="swiper sliderSwiper mx-5">
                 <div class="swiper-wrapper">
