@@ -10,7 +10,7 @@
 
 <div class="our-leadership py-3">
     <h3 class="text-center mb-5">OUR LEADERSHIP</h3>
-    <div class="container mx-auto d-flex justify-content-around gap-5 py-5 py-lg-0 m-3">
+    <div class="container mx-auto d-flex flex-lg-row flex-column justify-content-around gap-lg-5 py-lg-5  m-3">
         <? $postArgs = array(
             'post_type' => 'post', 
             'cat' => 13, 

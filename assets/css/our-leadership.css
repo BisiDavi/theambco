@@ -18,7 +18,7 @@
 .leader {
   border-radius: 20px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  height: 400px;
+  height: 360px;
   overflow: hidden;
   position: relative;
   display: flex;

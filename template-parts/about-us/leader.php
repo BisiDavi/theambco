@@ -10,7 +10,7 @@
 
 <? $content_post = get_post_field('post_content',$post->ID);?>
 
-<div class="col-4">
+<div class="col-lg-4 col-12">
     <div class="leader">
         <div class="image-view">
             <? echo the_post_thumbnail(); ?>
