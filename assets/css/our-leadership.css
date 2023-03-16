@@ -12,7 +12,7 @@
 .leader {
   border-radius: 20px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  height: 400px;
+  height: 360px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -26,8 +26,15 @@
 
 .text {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+.role {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .page__leader-body {
