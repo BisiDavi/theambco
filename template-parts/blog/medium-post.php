@@ -1,4 +1,4 @@
-<div class="medium-post">
+<div class="medium-post container-fluid">
     <? 
         // fetch blog post from medium
         $getMediumPost = wp_remote_get('https://api.rss2json.com/v1/api.json?rss_url=https://theambulancecompany.medium.com/feed');
