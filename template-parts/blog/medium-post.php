@@ -1,3 +1,5 @@
+<? require __DIR__ . '../../../utils/toSlug.php'; ?>
+
 <div class="medium-post container-fluid">
     <h3>Our Blog Post </h3>
     <div class="grid-post">
@@ -10,7 +12,8 @@
 
 
             foreach ($mediumPosts as $key => $data) {
-                get_template_part('template-parts/blog/medium-post_item', 'medium-post_item', array('post' => $data));
+                $postSlug = slugify($data->title); 
+                get_template_part('template-parts/blog/medium-post_item', 'medium-post_item', array('post' => $data, 'slug' => $postSlug));
             }
         ?>
     </div>
