@@ -2,6 +2,8 @@
 <? $postArgs = array(
         'post_type' => 'post', 
         'cat' => 15, 
+        'order' => 'ASC',
+        'orderby' => 'date',
     );
     $servicesPost = new WP_Query($postArgs);
     $index = 0;

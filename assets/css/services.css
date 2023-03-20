@@ -3,7 +3,12 @@
   width: 500px;
 }
 
-.service button {
+.service a {
   background-color: #004d43;
   color: white;
+  width: fit-content;
+}
+
+.service a:hover {
+  text-decoration: none;
 }
