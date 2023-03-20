@@ -8,8 +8,6 @@
 
 ?>
 
-<!-- 91 -->
-
 <?php $service_menu = wp_get_nav_menu_items(11); ?> 
 <?php $company_menu = wp_get_nav_menu_items(2); ?> 
 <? $contact_post = get_post_field('post_content',91);?>
