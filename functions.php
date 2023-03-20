@@ -57,6 +57,11 @@ function load_css()
         wp_register_style('services', get_template_directory_uri() . '/assets/css/services.css', array(), false, 'all');
         wp_enqueue_style('services');
     }
+
+    if(is_page('contact')){
+        wp_register_style('contact', get_template_directory_uri() . '/assets/css/contact.css', array(), false, 'all');
+        wp_enqueue_style('contact');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'load_css');

@@ -12,9 +12,10 @@
 <? $content_url = get_the_post_thumbnail_url(37, 'post-thumbnail');?>
 
 
-<div class="contact-us d-flex mt-5 align-items-center">
-    <div class="home_contact_us col-6">
-        <img src="<? echo $content_url; ?>" alt="contact us" class="w-100" />
+<div class="page_contact-us d-flex mt-5 align-items-center pt-4">
+    <div class="col-6 px-0 left"
+    style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(251, 7, 7, 0.33)), url(<? echo $content_url;?>);
+      background-size:cover;">
     </div>
     <div class="col-6">
         <h4>Contact Us</h4>

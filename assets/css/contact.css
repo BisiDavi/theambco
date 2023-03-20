@@ -1,0 +1,11 @@
+.page_contact-us {
+  height: 550px;
+}
+
+.page_contact-us .left {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(251, 7, 7, 0.33));
+}
+
+.page_contact-us .left {
+  height: 100%;
+}
