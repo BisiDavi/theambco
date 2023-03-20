@@ -1,6 +1,19 @@
+div#wpadminbar {
+  display: none;
+}
+
 .top-banner {
   height: 40px;
   background-color: #004d43;
+  color: white;
+}
+
+.emergency_line {
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner a {
   color: white;
 }
 
