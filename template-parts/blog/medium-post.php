@@ -1,22 +1,14 @@
-<?
-function debug_to_console($data, $context = 'Debug in Console') {
+<div class="medium-post">
+    <? 
+        // fetch blog post from medium
+        $getMediumPost = wp_remote_get('https://api.rss2json.com/v1/api.json?rss_url=https://theambulancecompany.medium.com/feed');
+        $mediumPost = wp_remote_retrieve_body($getMediumPost);
+        $mediumPostData = json_decode($mediumPost);
+        $mediumPosts = $mediumPostData -> items;
 
-    // Buffering to solve problems frameworks, like header() in this and not a solid return.
-    ob_start();
 
-    $output  = 'console.info(\'' . $context . ':\');';
-    $output .= 'console.log(' . json_encode($data) . ');';
-    $output  = sprintf('<script>%s</script>', $output);
-
-    echo $output;
-}
-?>
-
-<? 
-    // fetch blog post from medium
-    $getMediumPost = wp_remote_get('https://api.rss2json.com/v1/api.json?rss_url=https://theambulancecompany.medium.com/feed');
-    $mediumPost = wp_remote_retrieve_body($getMediumPost);
-    $mediumPostJson = json_decode($mediumPost);
-
-    debug_to_console($mediumPostJson, 'mediumPost')
-?>
+        foreach ($mediumPosts as $key => $data) {
+            get_template_part('template-parts/blog/medium-post_item', 'medium-post_item', array('post' => $data));
+        }
+    ?>
+</div>
