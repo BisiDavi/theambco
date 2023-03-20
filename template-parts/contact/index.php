@@ -18,7 +18,7 @@
       background-size:cover;">
     </div>
     <div class="col-6 py-5">
-        <h3>Contact Us</h3>
+        <h3>Require Our Services?</h3>
         <? echo $contact_post; ?>
         <? get_template_part('template-parts/contact/contact-form', 'contact-form'); ?>
     </div>

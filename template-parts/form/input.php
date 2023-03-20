@@ -1,7 +1,7 @@
 <? $input = $args['input'] ?>
 
 <div class="form-control">
-    <label htmlFor=""><? echo $input->label; ?></label>
+    <label htmlFor="<? echo $input->name ?>"><? echo $input->label; ?></label>
     <input 
         id="<? echo $input->name; ?>" 
         name="<? echo $input->name ?>"
