@@ -11,7 +11,6 @@ get_header('home');
 
 
 // load slider post loop
-get_template_part('template-parts/home/hero-banner', 'hero-banner');
 get_template_part('template-parts/blog/medium-post', 'medium-post');
 
 
