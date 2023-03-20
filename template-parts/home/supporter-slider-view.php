@@ -28,10 +28,8 @@
                             'cat' => 9, 
                         );
                         $sliderPost = new WP_Query($postArgs);
-                        $index = 0;
                         if ($sliderPost->have_posts()) {
                             while ($sliderPost->have_posts()) {
-                                $index++;
                                 $sliderPost->the_post();
                                 get_template_part('template-parts/home/supporter-slider', 'supporter-slider');
                             }
