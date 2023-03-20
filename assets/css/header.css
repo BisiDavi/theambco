@@ -1,3 +1,9 @@
+.top-banner {
+  height: 40px;
+  background-color: #004d43;
+  color: white;
+}
+
 .theambulance {
   background-color: #f5f5f5;
 }
