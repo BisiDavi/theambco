@@ -1,6 +1,7 @@
 .service_image img {
-  height: 350px;
-  width: 500px;
+  height: 380px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .service a {

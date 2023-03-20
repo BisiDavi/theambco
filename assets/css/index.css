@@ -91,6 +91,7 @@ nav ul li {
   padding: 10px 30px;
   margin: 20px 0px;
   display: flex;
+  width: fit-content;
 }
 
 .about_us_btn:hover,
@@ -99,6 +100,7 @@ nav ul li {
   border: 1px solid transparent;
   color: white;
   transition: background-color 1s ease-in-out;
+  text-decoration: none;
 }
 
 .about_btn_group {

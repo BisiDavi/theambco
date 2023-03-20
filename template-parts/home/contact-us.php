@@ -17,7 +17,7 @@
 style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(251, 7, 7, 0.33)), url(<? echo $content_url;?>);
       background-size:cover;">
  <? echo $content_post; ?>
- <button class="contact_us d-flex mx-auto about_us_btn">
+ <button class="contact_us d-flex mx-auto about_us_btn" href="/contact">
     Contact Us
  </button>
 </div>
