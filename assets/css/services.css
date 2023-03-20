@@ -1,0 +1,9 @@
+.service_image img {
+  height: 350px;
+  width: 500px;
+}
+
+.service button {
+  background-color: #004d43;
+  color: white;
+}

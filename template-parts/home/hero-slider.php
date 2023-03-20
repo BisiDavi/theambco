@@ -10,7 +10,7 @@
 
 
 <? 
- $evenOrOdd =   $args['index'] % 2;
+ $evenOrOdd = $args['index'] % 2;
  $imageOrder = $evenOrOdd === 0 ? "order-2" : "order-1";
  $textOrder = $evenOrOdd === 1 ? "order-2" : "order-1";
  ?>

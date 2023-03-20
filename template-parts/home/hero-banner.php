@@ -9,8 +9,8 @@
 ?>
 
 <div class="container-fluid swiper_slider">
-    <div class="swiper mx-lg-5 py-5 py-lg-0 m-3">
-        <div class="swiper-wrapper py-lg-5">
+    <div class="swiper mx-lg-5 py-3 py-lg-0 m-3">
+        <div class="swiper-wrapper py-lg-3 pb-lg-5">
             <? $postArgs = array(
                 'post_type' => 'post', 
                 'cat' => 5, 

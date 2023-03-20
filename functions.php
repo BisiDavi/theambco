@@ -52,6 +52,11 @@ function load_css()
         wp_register_style('blog', get_template_directory_uri() . '/assets/css/blog.css', array(), false, 'all');
         wp_enqueue_style('blog');
     }
+
+    if(is_page('services')){
+        wp_register_style('services', get_template_directory_uri() . '/assets/css/services.css', array(), false, 'all');
+        wp_enqueue_style('services');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'load_css');
