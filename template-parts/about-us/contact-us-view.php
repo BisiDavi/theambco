@@ -18,6 +18,6 @@
         <div class="text-content">
             <? echo $content_post; ?>
         </div>
-        <button class="button round-btn mx-auto mt-5">Contact us</button>
+        <a class="round-btn mx-auto mt-5" href="/contact">Contact us</a>
     </div>
 </div>
