@@ -17,8 +17,9 @@
     style="background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(251, 7, 7, 0.33)), url(<? echo $content_url;?>);
       background-size:cover;">
     </div>
-    <div class="col-6">
-        <h4>Contact Us</h4>
+    <div class="col-6 py-5">
+        <h3>Contact Us</h3>
         <? echo $contact_post; ?>
+        <? get_template_part('template-parts/contact/contact-form', 'contact-form'); ?>
     </div>
 </div>

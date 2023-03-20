@@ -1,0 +1,52 @@
+[
+  [
+    {
+      "label": "First Name",
+      "placeholder": "Enter your first name",
+      "type": "input",
+      "name": "firstName"
+    },
+    {
+      "label": "Last Name",
+      "placeholder": "Enter your last name",
+      "type": "input",
+      "name": "lastName"
+    }
+  ],
+  [
+    {
+      "label": "Email",
+      "placeholder": "Enter your email address",
+      "type": "input",
+      "name": "email"
+    },
+    {
+      "label": "Phone",
+      "placeholder": "Enter your phone number",
+      "type": "input",
+      "name": "email"
+    }
+  ],
+  [
+    {
+      "label": "Requirements",
+      "options": [
+        "Ground Ambulance Services",
+        "Air Ambulance Services",
+        "Medical Evacuations",
+        "Events Management",
+        "Medical Home Care"
+      ],
+      "type": "select",
+      "name": "email"
+    }
+  ],
+  [
+    {
+      "label": "Message",
+      "placeholder": "Enter your message",
+      "type": "textarea",
+      "name": "message"
+    }
+  ]
+]

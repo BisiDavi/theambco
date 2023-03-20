@@ -9,3 +9,7 @@
 .page_contact-us .left {
   height: 100%;
 }
+
+.page_contact-us p {
+  font-size: 18px;
+}
