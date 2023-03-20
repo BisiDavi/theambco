@@ -31,3 +31,7 @@
   text-align: center;
   font-weight: bold;
 }
+
+.medium-post .post-view p {
+  font-size: 14px;
+}
