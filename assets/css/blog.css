@@ -7,7 +7,7 @@
 .medium-post h3 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 25px;
+  margin: 140px 0px 25px;
 }
 
 .medium-post .grid-post {
@@ -34,4 +34,18 @@
 
 .medium-post .post-view p {
   font-size: 14px;
+}
+
+.medium-post .post-view {
+  text-decoration: none;
+}
+
+.medium-post .post-view p,
+.medium-post .post-view h6 {
+  color: black;
+}
+
+.medium-post a.post-view:hover h6,
+.medium-post a.post-view:hover p {
+  color: blue;
 }
