@@ -1,7 +1,22 @@
+<?
+function debug_to_console($data, $context = 'Debug in Console') {
+
+    // Buffering to solve problems frameworks, like header() in this and not a solid return.
+    ob_start();
+
+    $output  = 'console.info(\'' . $context . ':\');';
+    $output .= 'console.log(' . json_encode($data) . ');';
+    $output  = sprintf('<script>%s</script>', $output);
+
+    echo $output;
+}
+?>
+
+
 <? 
-    $contact_form_json_data = file_get_contents('json/contact-form.json');
-    $contact_form_json = json_decode($contact_form_json_data, true);
-    print_r($contact_form_json);
+    $json = file_get_contents(__DIR__ . '/contact-form.json');
+    $jsonData = json_decode($json, true);
+    debug_to_console($jsonData);
 ?>
 
 
