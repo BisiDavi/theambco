@@ -5,11 +5,10 @@
     <select 
         id="<? echo  $input['name']; ?>" 
         name="<?  $input['name']; ?>"
-        placeholder="<? echo  $input['placeholder']; ?>"
         class="form-control"  
     >
     <? foreach ($input['options'] as $key => $option) { ?>
-            <option value="<? echo $option; ?>"><? echo $option; ?> </option>
+            <option value="<? echo $option; ?>" class="py-2"><? echo $option; ?> </option>
     <? } ?>
 </select>
 </div>

@@ -34,5 +34,5 @@ function debug_to_console($data, $context = 'Debug in Console') {
                 ?>
             </div>
     <? } ?>
-
+    <button class="submit round-btn mx-auto mt-4">Submit</button>
 </form>
