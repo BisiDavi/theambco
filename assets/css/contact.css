@@ -27,3 +27,9 @@
 .page_contact-us h3 {
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .page_contact-us {
+    height: unset;
+  }
+}

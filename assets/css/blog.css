@@ -54,11 +54,27 @@
 @media (max-width: 768px) {
   .medium-post .grid-post {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
   }
   .medium-post .post-view img {
     width: 100%;
-    height: 300px;
-    border-radius: 10px;
+    height: 200px;
+  }
+  .medium-post {
+    margin-top: 40px;
+  }
+
+  .medium-post h3 {
+    margin: 60px auto 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .medium-post .grid-post {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .medium-post .post-view img {
+    height: 250px;
   }
 }

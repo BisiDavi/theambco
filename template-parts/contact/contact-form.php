@@ -12,7 +12,7 @@ function debug_to_console($data, $context = 'Debug in Console') {
 }
 ?>
 
-<form class="contact-form mx-5 my-4">
+<form class="contact-form mx-lg-5 m-0 my-lg-4 pb-5 pb-lg-0">
 
     <? 
         $json = file_get_contents(__DIR__ . '/contact-form.json');
