@@ -12,14 +12,27 @@ function debug_to_console($data, $context = 'Debug in Console') {
 }
 ?>
 
+<form class="contact-form mx-5 my-4">
 
-<? 
-    $json = file_get_contents(__DIR__ . '/contact-form.json');
-    $jsonData = json_decode($json, true);
-    debug_to_console($jsonData);
-?>
+    <? 
+        $json = file_get_contents(__DIR__ . '/contact-form.json');
+        $jsonData = json_decode($json, true);
 
-
-<form class="contact-form">
+        foreach ($jsonData as $jsonArray) { ?>
+            <div class="form-group row">
+                <?
+                    foreach ($jsonArray as $formElementData) {
+                        // debug_to_console($formElementData['type'],'$formElementData->type');
+                        if($formElementData['type'] === 'input'){
+                            get_template_part('template-parts/form/input', 'input', array('input' => $formElementData));
+                        }else if($formElementData['type'] === 'textarea'){
+                            get_template_part('template-parts/form/textarea', 'input', array('input' => $formElementData));
+                        }else if($formElementData['type'] === 'select'){
+                            get_template_part('template-parts/form/select', 'input', array('input' => $formElementData));
+                        }
+                    }
+                ?>
+            </div>
+    <? } ?>
 
 </form>
