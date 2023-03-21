@@ -1,5 +1,5 @@
 .page_contact-us {
-  height: 550px;
+  height: 700px;
 }
 
 .page_contact-us .left {
@@ -12,4 +12,18 @@
 
 .page_contact-us p {
   font-size: 18px;
+}
+
+.page_contact-us .right {
+  background: rgba(219, 204, 72, 0.933);
+}
+
+.page_contact-us input,
+.page_contact-us select,
+.page_contact-us textarea {
+  border: 2px solid #454545;
+}
+
+.page_contact-us h3 {
+  font-weight: 600;
 }
