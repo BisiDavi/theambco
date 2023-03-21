@@ -9,7 +9,7 @@
     <div class="col-lg-6 col-12 <?php echo $imageOrder; ?> service_image">
         <? echo the_post_thumbnail(); ?>
     </div>
-    <div class="col-lg-6 col-12 <? echo $textOrder; ?>">
+    <div class="col-lg-6 col-12 mt-4 mt-lg-0 <? echo $textOrder; ?>">
         <h4><? echo the_title(); ?></h4>
         <? echo $content_post; ?>
         <a class="round-btn" href="/contact">Contact us &gt;</a>
