@@ -9,6 +9,10 @@
 }
 
 @media (max-width: 768px) {
+  .swiper_slider {
+    padding: 50px 0px;
+    margin-top: 20px;
+  }
   nav {
     display: none;
   }

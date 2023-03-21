@@ -12,7 +12,7 @@
 <? $content_post = get_post_field('post_content',95);?>
 
 
-<div class="our-mission-view col-lg-6 col-12 p-5">
+<div class="our-mission-view col-lg-6 col-12 p-lg-5 p-4">
     <h3 class="text-center"><? echo $post_title; ?></h3>
     <p> <? echo $content_post; ?> </p>
 </div>
