@@ -75,6 +75,10 @@ nav ul li {
   transition: 2s ease-in-out;
 }
 
+.about-us .image-view .overlay{
+  
+}
+
 .round-btn {
   background-color: white;
   border-radius: 10px;
