@@ -56,11 +56,12 @@ nav ul li {
 .swiper_slider {
   padding-top: 100px;
   margin-top: 20px;
+  background-color: white;
 }
 
 /* about-us */
 .about-us {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 .about-us .about_img {
   width: 100%;
@@ -122,10 +123,9 @@ nav ul li {
 
 /* home_contact_us */
 .home_contact_us {
-  height: 750px;
   position: relative;
-  padding: 60px 0px;
-  background-color: #f5f5f5;
+  padding: 60px 0px 40px;
+  background-color: white;
 }
 
 .home_contact_us .wp-block-column {
@@ -139,7 +139,7 @@ nav ul li {
   border-radius: 0;
   padding: 0px 20px;
   margin-top: -40px;
-  background-color: white;
+  background-color: #f5f5f5;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding-top: 40px;
