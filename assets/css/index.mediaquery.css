@@ -54,10 +54,15 @@
     justify-content: center;
   }
 
-  /* about-us */
-  .about-us .about_img {
-    height: 300px;
+  .about-us .image-view {
+    width: 95%;
   }
+
+  .about-us .about_img {
+    height: 450px;
+  }
+
+
 
   .about-us .flex-column {
     gap: 40px;
@@ -93,5 +98,12 @@
   /* footer */
   footer.footer {
     padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us .about_img {
+    height: 350px;
+    max-height: 350px;
   }
 }
