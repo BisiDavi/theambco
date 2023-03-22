@@ -9,8 +9,8 @@
 ?>
 
 
-<div class="about-mission container-fluid py-5">
-    <div class="row">
+<div class="about-mission container-fluid p-0">
+    <div class="row mt-0">
     <? get_template_part('template-parts/about-us/about-us-view', 'about-us-view'); ?>
     <? get_template_part('template-parts/about-us/mission-view', 'mission-view'); ?>
     </div>

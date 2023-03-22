@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="our-leadership py-3">
+<div class="our-leadership py-5 bg-white">
     <h3 class="text-center mb-5">OUR LEADERSHIP</h3>
     <div class="container mx-auto d-flex flex-lg-row flex-column justify-content-around gap-lg-5 py-lg-5 p-4">
         <? $postArgs = array(
