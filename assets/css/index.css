@@ -74,9 +74,17 @@ nav ul li {
   display: none;
   transition: 2s ease-in-out;
 }
+.about-us .image-view {
+  position: relative;
+}
 
-.about-us .image-view .overlay{
-  
+.about-us .image-view .overlay {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgb(145 230 195 / 33%));
+  position: absolute;
+  border-radius: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  top: 0px;
 }
 
 .round-btn {

@@ -4,6 +4,10 @@
   border-radius: 10px;
 }
 
+.service h4 {
+  font-weight: 700;
+}
+
 .service a {
   background-color: #004d43;
   color: white;
