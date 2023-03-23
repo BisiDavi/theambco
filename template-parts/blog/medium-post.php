@@ -1,4 +1,3 @@
-
 <div class="medium-post container-fluid">
     <h3>Our Blog Post </h3>
     <div class="grid-post">
@@ -15,7 +14,6 @@
             if($parentPage->have_posts()){
                 while($parentPage->have_posts()){
                     $parentPage->the_post();
-
                     get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
                 }
             }
