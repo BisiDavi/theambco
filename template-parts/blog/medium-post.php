@@ -1,11 +1,22 @@
-<? require __DIR__ . '../../../utils/toSlug.php'; ?>
+<?
+function debug_to_console($data, $context = 'Debug in Console') {
+
+    // Buffering to solve problems frameworks, like header() in this and not a solid return.
+    ob_start();
+
+    $output  = 'console.info(\'' . $context . ':\');';
+    $output .= 'console.log(' . json_encode($data) . ');';
+    $output  = sprintf('<script>%s</script>', $output);
+
+    echo $output;
+}
+?>
 
 <div class="medium-post container-fluid">
     <h3>Our Blog Post </h3>
     <div class="grid-post">
         <? 
-            // fetch blog post from medium
-
+            // fetch blog sub pages
             $pageArgs = array(
                 'post_type' => 'page',
                 'post_per_page' => -1,
@@ -18,20 +29,12 @@
             if($parentPage->have_posts()){
                 while($parentPage->have_posts()){
                     $parentPage->the_post();
+
+                    debug_to_console($parentPage, 'parentPage');
+
                     get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
                 }
             }
-
-            // $getMediumPost = wp_remote_get('https://api.rss2json.com/v1/api.json?rss_url=https://theambulancecompany.medium.com/feed');
-            // $mediumPost = wp_remote_retrieve_body($getMediumPost);
-            // $mediumPostData = json_decode($mediumPost);
-            // $mediumPosts = $mediumPostData -> items;
-
-
-            // foreach ($mediumPosts as $key => $data) {
-            //     $postSlug = slugify($data->title); 
-            //     get_template_part('template-parts/blog/medium-post_item', 'medium-post_item', array('post' => $data, 'slug' => $postSlug));
-            // }
         ?>
     </div>
 </div>
