@@ -1,0 +1,33 @@
+.blog_view_page {
+  margin: 80px auto;
+}
+
+.blog_view_page h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.blog_image_view {
+  margin-top: 20px;
+}
+
+.blog_image_view img {
+  border-radius: 20px;
+  height: 700px;
+}
+
+.blog_text-content {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 60px 0px;
+}
+
+.blog_text-content p,
+.blog_text-content li {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 28px;
+}
+
+.blog_text-content li {
+  margin: 15px 0px;
+}
