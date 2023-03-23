@@ -29,6 +29,10 @@
   line-height: 28px;
 }
 
+.blog_text-content ul {
+    margin: 0px 25px;
+  }
+  
 .blog_text-content li {
   margin: 15px 0px;
 }
