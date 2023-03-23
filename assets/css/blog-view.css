@@ -14,7 +14,7 @@
 
 .blog_image_view img {
   border-radius: 20px;
-  height: 700px;
+  width: 100%;
 }
 
 .blog_text-content {
