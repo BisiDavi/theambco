@@ -17,7 +17,6 @@ function debug_to_console($data, $context = 'Debug in Console') {
 <?
     global $wp;
     $page_url = home_url($wp->request);
-    debug_to_console($page_url,'page_url');
 ?>
 <? 
     // fetch blog post from medium
