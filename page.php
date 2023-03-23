@@ -27,11 +27,23 @@ function debug_to_console($data, $context = 'Debug in Console') {
     global $wp;
     $page_url = home_url($wp->request);
     $page_slug = explode('/blog/',$page_url)[1];
+
     debug_to_console($page_slug,'page_slug');
 
+    $postArgs = array(
+        'post_type' => 'page',
+        'name' => $page_slug
+    );
 
-    // load slider post loop
-    // get_template_part('template-parts/blog/blog-view', 'blog-view');
+    $blogPost = new WP_Query($postArgs);
+    debug_to_console($blogPost,'blogPost');
+    if($blogPost->have_posts()){
+        while($blogPost->have_posts()){
+            $blogPost->the_post();
+            debug_to_console($blogPost,'blogPost');
+            get_template_part('template-parts/blog/blog-view', 'blog-view');
+        }
+    }
 
     get_footer('home');
 ?>
