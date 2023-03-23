@@ -22,9 +22,9 @@
             <h3><? echo $post_title ?></h3>
             <? echo $content_post ?>
             <div class="about_btn_group d-flex align-items-center justify-content-between">
-                <button class="about_us_btn">
+                <a class="about_us_btn" href="/about-us">
                     About us
-                </button>
+                </a>
                 <a id="read_more_about_us" class="read_more_link">Read More</a>
             </div>
         </div>
