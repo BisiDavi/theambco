@@ -10,11 +10,16 @@
 
 .blog_image_view {
   margin-top: 20px;
+  width: 100%;
 }
 
 .blog_image_view img {
   border-radius: 20px;
-  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
 }
 
 .blog_text-content {
@@ -30,9 +35,9 @@
 }
 
 .blog_text-content ul {
-    margin: 0px 25px;
-  }
-  
+  margin: 0px 25px;
+}
+
 .blog_text-content li {
   margin: 15px 0px;
 }

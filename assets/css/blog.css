@@ -25,6 +25,15 @@
   border-radius: 10px;
 }
 
+.post-text-content {
+  height: 120px;
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-top: -10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .medium-post .post-view h6 {
   font-size: 18px;
   line-height: 20px;

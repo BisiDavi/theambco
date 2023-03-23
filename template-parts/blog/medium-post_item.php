@@ -3,6 +3,8 @@
 
 <a class="post-view" href="<? echo $post->post_name; ?>">
     <? echo the_post_thumbnail(); ?>
-    <h6> <? echo the_title(); ?> </h6>
-    <p>Posted on: <? echo $publishedOn; ?> </p>
+    <div class="post-text-content">
+        <h6> <? echo the_title(); ?> </h6>
+        <p>Posted on: <? echo $publishedOn; ?> </p>
+    </div>
 </a>
