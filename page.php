@@ -14,7 +14,3 @@ get_header('home');
 
 get_footer('home');
 ?>
-
-<div class="page-vew">
-    <h4>Welcome</h4>
-</div>
