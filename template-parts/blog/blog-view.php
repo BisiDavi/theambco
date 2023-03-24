@@ -41,6 +41,17 @@ $publishedOn = date_format($post_date, 'l, F Y');
                             }
                         ?>
                     </div>
+                    <div class="pagination">
+                    <? 
+                        the_posts_pagination( array(
+                                        'mid_size' => 2,
+                                        'prev_text' => __( 'Previous Page', 'textdomain' ),
+                                        'next_text' => __( 'Next Page', 'textdomain' ),
+                                    ) );
+
+                        the_posts_pagination(); 
+                    ?>
+                </div>
                 </div>
             <? } ?>
             <div class="other_post">
