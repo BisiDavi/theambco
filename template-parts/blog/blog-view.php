@@ -33,8 +33,8 @@ debug_to_console($post, 'post');
             </div>
             <h6 class="posted_on">Date: <? echo $publishedOn; ?></h6>
             <?if ($post_tags){ ?>
-                <div class="post_tag d-flex flex-wrap">
-                    <h6>Post Tags</h6>
+                <div class="post_tag align-items-center d-flex flex-wrap">
+                    <h6 class="mr-2">Post Tags</h6>
                     <div class="align-items-center flex-wrap justify-content-start gap-4 d-flex">
                         <? 
                             foreach ($post_tags as $post_tag) { 
