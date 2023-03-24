@@ -1,17 +1,3 @@
-<?
-function debug_to_console($data, $context = 'Debug in Console') {
-
-    // Buffering to solve problems frameworks, like header() in this and not a solid return.
-    ob_start();
-
-    $output  = 'console.info(\'' . $context . ':\');';
-    $output .= 'console.log(' . json_encode($data) . ');';
-    $output  = sprintf('<script>%s</script>', $output);
-
-    echo $output;
-}
-?>
-
 <div class="medium-post container-fluid">
     <h3>Our Blog Post </h3>
     <div class="grid-post">
@@ -26,7 +12,6 @@ function debug_to_console($data, $context = 'Debug in Console') {
             $parentPage = new WP_Query($pageArgs);
 
             if($parentPage->have_posts()){
-                debug_to_console($parentPage->post, 'parentPage_post');
                 $pinned_post_title = get_post_field('post_title',240);        
                 $pinned_post_link = get_post_field('post_name',240);        
                 $pinned_post_date = get_post_field('post_date',240);        
@@ -42,8 +27,9 @@ function debug_to_console($data, $context = 'Debug in Console') {
                 
                 while($parentPage->have_posts()){
                     $parentPage->the_post();
-                    debug_to_console($parentPage, 'parentPage');
-                    get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
+                    if($parentPage->post->ID !== 240){
+                        get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
+                    }
                 }
             }
         ?>
