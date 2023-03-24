@@ -63,7 +63,8 @@ $publishedOn = date_format($post_date, 'l, F Y');
                         'orderby' => 'rand',
                         'cat' => 16,
                         'author' => $post->post_author,
-                        'posts_per_page' => 5
+                        'posts_per_page' => 5,
+                        'post__not_in' => array($post->ID)
                     );
                     $otherPost = new WP_Query($otherPostArgs);
                     if($otherPost->have_posts()){

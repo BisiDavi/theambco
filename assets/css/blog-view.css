@@ -100,4 +100,10 @@
   .blog_image_view img {
     max-height: 400px;
   }
+  .other-post-view h6 {
+    font-size: 16px;
+  }
+  .other-post-view p {
+    font-size: 13px;
+  }
 }
