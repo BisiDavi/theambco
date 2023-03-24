@@ -1,5 +1,6 @@
 .blog_view_page {
   margin: 80px auto;
+  background-color: white;
 }
 
 .blog_view_page h2 {
@@ -40,4 +41,20 @@
 
 .blog_text-content li {
   margin: 15px 0px;
+}
+
+/* post tag */
+.tags h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.post-tag {
+  background-color: #004d43;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 10px;
+}
+
+.post-tag:hover {
+  opacity: 0.7;
 }
