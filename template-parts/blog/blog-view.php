@@ -15,9 +15,9 @@ $post_date = date_create($post->post_date);
 $publishedOn = date_format($post_date, 'l, F Y');
 ?>
 
-<div class="p-5 blog_view_page">
+<div class="p-lg-5 py-5 blog_view_page">
     <h2 class="text-center font-bold"> <? echo the_title();  ?> </h2>
-    <div class="container-fluid d-flex mx-auto">
+    <div class="container-fluid d-flex flex-column flex-lg-row mx-auto">
         <div class="col-lg-8 col-12">
             <div class="blog_image_view">
                 <? echo the_post_thumbnail(); ?>

@@ -60,6 +60,14 @@
   color: blue;
 }
 
+.medium-post .pagination {
+  display: flex;
+  align-items: center;
+  margin: 30px auto 0px;
+  justify-content: center;
+  gap: 30px;
+}
+
 @media (max-width: 1200px) and (min-width: 768px) {
   .medium-post .grid-post {
     grid-template-columns: repeat(3, 1fr);

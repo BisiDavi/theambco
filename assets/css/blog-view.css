@@ -21,7 +21,7 @@
   align-items: center;
   display: flex;
   max-width: 100%;
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .blog_text-content {
@@ -90,4 +90,14 @@
 
 .other-post-view:hover {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .blog_view_page h2 {
+    font-size: 24px;
+    margin: 10px auto;
+  }
+  .blog_image_view img {
+    max-height: 400px;
+  }
 }
