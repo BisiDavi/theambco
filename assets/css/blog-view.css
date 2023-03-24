@@ -1,5 +1,5 @@
 .blog_view_page {
-  margin: 80px auto;
+  margin: 80px auto 0px;
   background-color: white;
 }
 
@@ -45,8 +45,8 @@
 
 /* post tag */
 .tags h6 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
 .post-tag {
   background-color: #004d43;
