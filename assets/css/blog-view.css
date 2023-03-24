@@ -21,6 +21,7 @@
   align-items: center;
   display: flex;
   max-width: 100%;
+  max-height: 600px;
 }
 
 .blog_text-content {
@@ -44,6 +45,9 @@
 }
 
 /* post tag */
+.tags {
+  position: sticky;
+}
 .tags h6 {
   font-size: 16px;
   font-weight: 500;
@@ -57,4 +61,33 @@
 
 .post-tag:hover {
   opacity: 0.7;
+}
+
+/* other-post-view */
+.other-post-view {
+  color: black;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: 120px;
+}
+.other-post-view .thumbnail img {
+  height: 120px;
+  width: 120px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.other-post-view h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0px;
+}
+.other-post-view p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.other-post-view:hover {
+  text-decoration: none;
 }
