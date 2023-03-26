@@ -6,6 +6,10 @@ let swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     type: "bullets",
   },
+  navigation: {
+    nextEl: ".swiperButtonNext",
+    prevEl: ".swiperButtonPrev",
+  },
   on: {
     slideChange: () => {
       const heroText = document.getElementById("hero_text");

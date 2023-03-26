@@ -30,6 +30,8 @@
                 } 
             ?>
         </div>
+        <div class="swb swiper-button-prev swiperButtonPrev"></div>
+        <div class="swb swiper-button-next swiperButtonNext"></div>
         <div class="swiper-pagination"></div>
     </div>
 </div>
