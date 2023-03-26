@@ -11,7 +11,7 @@ get_header('home');
 
 
 // load slider post loop
-get_template_part('template-parts/home/hero-banner', 'hero-banner');
+get_template_part('template-parts/home/sliders/hero-banner', 'hero-banner');
 
 get_template_part('template-parts/about-us/about-mission', 'about-mission');
 

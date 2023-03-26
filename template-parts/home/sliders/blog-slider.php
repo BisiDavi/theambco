@@ -16,7 +16,7 @@
     <div class="container supporters py-5">
         <h3> Our Blog Post</h3>
         <div class="blog-slider mt-5">
-            <div class="swiper sliderSwiper mx-5">
+            <div class="swiper blogSwiper mx-5">
                 <div class="swiper-wrapper">
                     <? $postArgs = array(
                             'post_type' => 'post', 
@@ -33,11 +33,8 @@
                     ?> 
                 </div>
             </div>
-            <div class="paginate-slider">
-                <div class="swiper-pagination sliderSwiperPagination"></div>
-            </div>
-            <div class="swiper-button-prev swiperButtonPrev"></div>
-            <div class="swiper-button-next swiperButtonNext"></div>
+            <div class="swiper-button-prev blogSwiperButtonPrev"></div>
+            <div class="swiper-button-next blogSwiperButtonNext"></div>
         </div>
     </div>
 </div>
