@@ -3,9 +3,6 @@ let sliderSwiper = new Swiper(".blogSwiper", {
   spaceBetween: 10,
   loop: true,
   animating: true,
-  autoplay: {
-    delay: 5000,
-  },
   navigation: {
     nextEl: ".blogSwiperButtonNext",
     prevEl: ".blogSwiperButtonPrev",

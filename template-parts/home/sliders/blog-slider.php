@@ -21,7 +21,8 @@
                     <? $postArgs = array(
                             'post_type' => 'post', 
                             'cat' => 16, 
-                            'posts_per_page' => 10
+                            'posts_per_page' => 10,
+                            'orderby' => 'rand'
                         );
                         $sliderPost = new WP_Query($postArgs);
                         if ($sliderPost->have_posts()) {
