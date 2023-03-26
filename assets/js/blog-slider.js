@@ -1,11 +1,14 @@
-let sliderSwiper = new Swiper(".blogSwiper", {
+let blogSwiper = new Swiper(".blogSwiper", {
   slidesPerView: 5,
   spaceBetween: 10,
   loop: true,
-  animating: true,
   navigation: {
     nextEl: ".blogSwiperButtonNext",
     prevEl: ".blogSwiperButtonPrev",
+  },
+  pagination: {
+    el: ".blogSwiperPagination",
+    type: "bullets",
   },
   breakpoints: {
     // when window width is >= 320px

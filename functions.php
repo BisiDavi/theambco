@@ -78,6 +78,7 @@ function load_js()
     
     if(is_home()){
         wp_enqueue_script('about-us', get_template_directory_uri() . '/assets/js/about-us.js', array(), '1.0.0', true);
+        wp_enqueue_script('blog-slider', get_template_directory_uri() . '/assets/js/blog-slider.js', array(), '1.0.0', true);
     }
 
     wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);

@@ -19,9 +19,9 @@ get_template_part('template-parts/home/contact-us', 'contact-us');
 
 get_template_part('template-parts/home/sliders/blog-slider', 'blog-slider');
 
-get_template_part('template-parts/home/sliders/supporter-slider-view', 'supporter-slider-view');
-
 get_template_part('template-parts/home/contact-us-view', 'contact-us-view');
+
+get_template_part('template-parts/home/sliders/supporter-slider-view', 'supporter-slider-view');
 
 get_footer('home');
 
