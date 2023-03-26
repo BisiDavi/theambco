@@ -113,7 +113,6 @@ nav ul li {
 .about_us_btn:hover,
 .round-btn:hover {
   background-color: rgb(84, 179, 84);
-  border: 1px solid transparent;
   color: white;
   transition: background-color 1s ease-in-out;
   text-decoration: none;
