@@ -31,7 +31,7 @@
                         if ($sliderPost->have_posts()) {
                             while ($sliderPost->have_posts()) {
                                 $sliderPost->the_post();
-                                get_template_part('template-parts/home/supporter-slider', 'supporter-slider');
+                                get_template_part('template-parts/home/sliders/supporter-slider', 'supporter-slider');
                             }
                         } 
                     ?> 

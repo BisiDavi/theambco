@@ -57,7 +57,7 @@
 
 .medium-post a.post-view:hover h6,
 .medium-post a.post-view:hover p {
-  color: blue;
+  color: #004d43;
 }
 
 .medium-post .pagination {

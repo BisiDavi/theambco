@@ -21,3 +21,10 @@
 .service a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .service_image img {
+    height: 300px;
+    width: 100%;
+  }
+}

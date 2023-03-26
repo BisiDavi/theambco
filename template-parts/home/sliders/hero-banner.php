@@ -23,7 +23,7 @@
                     while ($sliderPost->have_posts()) {
                         $index++;
                         $sliderPost->the_post();
-                        get_template_part('template-parts/home/hero-slider', 'hero-slider', array(
+                        get_template_part('template-parts/home/sliders/hero-slider', 'hero-slider', array(
                             'index' => $index
                         ));
                     }
