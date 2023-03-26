@@ -15,6 +15,9 @@ function load_css()
     wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bootstrap');
 
+    wp_register_style('swiper', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), false, 'all');
+    wp_enqueue_style('swiper');
+
     wp_register_style('main', get_template_directory_uri() . '/assets/css/index.css', array(), false, 'all');
     wp_enqueue_style('main');
 
@@ -32,9 +35,6 @@ function load_css()
 
     wp_register_style('banner', get_template_directory_uri() . '/assets/css/banner.css', array(), false, 'all');
     wp_enqueue_style('banner');
-
-    wp_register_style('swiper', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), false, 'all');
-    wp_enqueue_style('swiper');
 
     wp_register_style('font-css', get_template_directory_uri() . '/assets/fonts/stylesheet.css', array(), false, 'all');
     wp_enqueue_style('font-css');
@@ -76,15 +76,14 @@ function load_js()
 
     wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
     
+    wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('swiper',  get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle'), '1.0.0', true);
+    wp_enqueue_script('supporter-slider', get_template_directory_uri() . '/assets/js/supporter-slider.js', array('swiper-bundle'), '1.0.0', true);
+    
     if(is_home()){
         wp_enqueue_script('about-us', get_template_directory_uri() . '/assets/js/about-us.js', array(), '1.0.0', true);
         wp_enqueue_script('blog-slider', get_template_directory_uri() . '/assets/js/blog-slider.js', array(), '1.0.0', true);
     }
-
-    wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);
-
-    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle'), '1.0.0', true);
-    wp_enqueue_script('supporter-slider', get_template_directory_uri() . '/assets/js/supporter-slider.js', array('swiper-bundle'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'load_js');

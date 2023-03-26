@@ -59,6 +59,9 @@ nav ul li {
   margin-top: 60px;
   background-color: white;
 }
+.swiper-pagination-bullet {
+  margin: 0px 5px;
+}
 
 /* about-us */
 .about-us {
