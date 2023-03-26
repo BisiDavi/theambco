@@ -41,7 +41,7 @@
             <div class="swiper-button-next blogSwiperButtonNext"></div>
         </div>
     </div>
-    <button class="btn mt-5 mx-auto justify-content-center d-flex about_us_btn" href="/blog">
+    <a class="btn mt-5 mx-auto justify-content-center d-flex about_us_btn" href="/blog">
         Read More
-    </button>
+    </a>
 </div>
