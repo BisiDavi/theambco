@@ -107,6 +107,19 @@
     font-size: 16px;
   }
 
+  /* services */
+  .services-view .right {
+    gap: 30px;
+    max-height: 300px;
+    margin: 40px auto;
+  }
+
+  .service_card {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+
   /* footer */
   footer.footer {
     padding: 0px;

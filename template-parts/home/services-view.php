@@ -9,9 +9,9 @@
     $servicesPost = new WP_Query($postArgs);
 ?>
 
-<div class="services-view py-5 d-flex">
-    <div class="container d-flex">
-        <div class="col-lg-6 col-12">
+<div class="services-view py-lg-5 d-flex mb-5">
+    <div class="container d-flex flex-column flex-lg-row">
+        <div class="col-lg-6 order-2 order-lg-1 col-12 pb-5 pb-lg-0">
             <h4>Our Services.</h4>
             <h6>We Provide Topnotch Services</h6>
             <p>
@@ -19,7 +19,7 @@
             </p>
             <a href="/services" class="round-btn">View all services →</a>
         </div>
-        <div class="col-lg-6 col-12 right">
+        <div class="col-lg-6 col-12 order-1 order-lg-2  right">
         <?
                 if ($servicesPost->have_posts()) {
                     $index = 0;
