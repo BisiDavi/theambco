@@ -8,7 +8,10 @@
 
 ?>
 
-<? $content_post = get_post_field('post_content',$post->ID);?>
+<? 
+    $content_post = get_post_field('post_content',$post->ID);
+    $position = get_post_field('position',$post->ID);
+?>
 
 <div class="col-lg-4 col-12">
     <div class="leader">
@@ -19,7 +22,7 @@
             <? echo the_title(); ?>
         </div>
         <div class="role">
-            <? the_field('position', $post->ID); ?>
+            <? echo $position; ?>
         </div>
         <div class="leader-body">
             <? echo $content_post; ?>
