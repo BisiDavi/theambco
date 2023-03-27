@@ -16,7 +16,7 @@
     <h3 class="text-decoration-none text-center fw-600 mt-4"> Our Blog Post</h3>
     <div class="blog-slider-section">
         <div class="blog-slider mt-5 d-flex flex-column">
-            <div class="swiper blogSwiper mx-5">
+            <div class="swiper blogSwiper mx-lg-5 mx-2">
                 <div class="swiper-wrapper">
                     <? $postArgs = array(
                             'post_type' => 'post', 

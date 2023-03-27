@@ -17,16 +17,16 @@ let blogSwiper = new Swiper(".blogSwiper", {
     },
     // when window width is >= 480px
     350: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1000: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     1440: {

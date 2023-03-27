@@ -7,19 +7,19 @@
 
 <div class="statistics container mx-auto">
     <div class="col-12 d-flex text-align-center">
-        <div class="col-3 count" data-default="0" data-value="<? echo $calls_received ?> ">
+        <div class="col-lg-3 col-6 count" data-default="0" data-value="<? echo $calls_received ?> ">
             <? echo $calls_received ?> 
             <h6>Calls Received</h6>
         </div>
-        <div class="col-3 count"  data-default="0"  data-value="<? echo $live_saved ?>">
+        <div class="col-lg-3 col-6 count"  data-default="0"  data-value="<? echo $live_saved ?>">
             <? echo $live_saved ?>
             <h6>Lives Saved</h6>
         </div>
-        <div class="col-3 count"  data-default="0"  data-value="<? echo $avg_resp_time; ?>">
+        <div class="col-lg-3 col-6 count"  data-default="0"  data-value="<? echo $avg_resp_time; ?>">
             <? echo $avg_resp_time; ?>
             <h6>Average Response Time</h6>
         </div>
-        <div class="col-3 count"  data-default="0"  data-value="<? echo $ambulances; ?>">
+        <div class="col-lg-3 col-6 count"  data-default="0"  data-value="<? echo $ambulances; ?>">
             <? echo $ambulances; ?>
             <h6>Ambulances</h6>
         </div>

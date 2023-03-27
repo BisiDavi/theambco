@@ -1,4 +1,4 @@
-j<?php
+<?php
 
 /**
  * Enqueue scripts and styles.

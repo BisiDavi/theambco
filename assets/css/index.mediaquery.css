@@ -13,6 +13,11 @@
     padding: 50px 0px;
     margin-top: 20px;
   }
+  .home_contact_us .wp-block-columns {
+    gap: 40px;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+  }
   nav {
     display: none;
   }
@@ -58,11 +63,14 @@
     width: 95%;
   }
 
-  .about-us .about_img {
-    height: 450px;
+  #about_us_content h3 {
+    font-size: 22px;
   }
 
-
+  .about-us .about_img,
+  .about-us .image-view .overlay {
+    height: 350px;
+  }
 
   .about-us .flex-column {
     gap: 40px;
