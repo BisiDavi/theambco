@@ -10,8 +10,12 @@
 
 @media (max-width: 768px) {
   .swiper_slider {
-    padding: 50px 0px;
-    margin-top: 20px;
+    padding: 30px 0px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .swiper-pagination.swiper-pagination-bullets {
+    bottom: -6px;
   }
   .home_contact_us .wp-block-columns {
     gap: 40px;
@@ -69,7 +73,7 @@
 
   .about-us .about_img,
   .about-us .image-view .overlay {
-    height: 350px;
+    height: 300px !important;
   }
 
   .about-us .flex-column {

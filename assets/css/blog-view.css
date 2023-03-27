@@ -175,6 +175,10 @@
   margin-top: 30px;
 }
 @media (max-width: 768px) {
+  .blog_view_page {
+    margin: 40px auto 0px;
+    background-color: white;
+  }
   .blog_view_page h2 {
     font-size: 24px;
     margin: 10px auto;

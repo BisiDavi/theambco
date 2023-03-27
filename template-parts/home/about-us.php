@@ -12,7 +12,7 @@
 <? $content_post = get_post_field('post_content',32);?>
 <? $content_url = get_the_post_thumbnail_url(32, 'post-thumbnail');?>
 
-<div class="about-us py-5">
+<div class="about-us py-lg-5">
     <div class="d-flex flex-column flex-lg-row justify-content-between py-5">
         <div class="col-lg-6 col-12 px-0 mx-0 image-view">
             <img class="about_img" src="<? echo $content_url; ?>" height="450px" />
