@@ -19,9 +19,9 @@
 
             <footer class="footer py-5 text-white">
                 <div class="container d-flex flex-column flex-lg-row justify-content-between">
-                    <div class="logo col-lg-3 col-12">
+                    <div class="logo col-lg-3 col-12 mb-4 mb-lg-0">
                         <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
-                        <h6 class="my-4">Swift access to high quality medical care </h6>
+                        <h6 class="my-lg-4 my-2">Swift access to high quality medical care </h6>
                         <div class="footer-social-links">
                             <a  target="_blank" href="<? echo $instagram;?>">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/images/instagram.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />

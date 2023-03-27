@@ -3,7 +3,7 @@
     $publishedOn = date_format($date, 'l, F Y'); 
  ?>
 
-<a class="post-view" href="/<? echo $post->post_name; ?>">
+<a class="post-view my-3 my-lg-0" href="/<? echo $post->post_name; ?>">
     <? echo the_post_thumbnail(); ?>
     <div class="post-text-content">
         <h6> <? echo the_title(); ?> </h6>
