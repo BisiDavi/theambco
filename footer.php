@@ -8,15 +8,31 @@
 
 ?>
 
-<?php $service_menu = wp_get_nav_menu_items(11); ?> 
-<?php $company_menu = wp_get_nav_menu_items(2); ?> 
-<? $contact_post = get_post_field('post_content',91);?>
+<? 
+    $service_menu = wp_get_nav_menu_items(11);  
+    $company_menu = wp_get_nav_menu_items(2); 
+    $contact_post = get_post_field('post_content',91);
+    $facebook_link = get_post_field('facebook',305);
+    $twitter_link = get_post_field('twitter',305);
+    $instagram = get_post_field('instagram',305);
+?>
 
             <footer class="footer py-5 text-white">
                 <div class="container d-flex flex-column flex-lg-row justify-content-between">
                     <div class="logo col-lg-3 col-12">
                         <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
                         <h6 class="my-4">Swift access to high quality medical care </h6>
+                        <div class="footer-social-links">
+                            <a  target="_blank" href="<? echo $instagram;?>">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/instagram.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
+                            </a>
+                            <a href="<? echo $twitter_link;?>" target="_blank">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/twitter.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
+                            </a>
+                            <a href="<? echo $facebook_link;?>" target="_blank">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/facebook.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
+                            </a>
+                        </div>
                     </div>
                     <div class="services col-lg-3 col-12">
                         <h4>OUR SERVICES</h4>
