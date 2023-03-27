@@ -1,4 +1,4 @@
-<?php
+j<?php
 
 /**
  * Enqueue scripts and styles.
@@ -50,6 +50,9 @@ function load_css()
 
     wp_register_style('blog-view', get_template_directory_uri() . '/assets/css/blog-view.css', array(), false, 'all');
     wp_enqueue_style('blog-view');
+
+    wp_register_style('statistics', get_template_directory_uri() . '/assets/css/statistics.css', array(), false, 'all');
+    wp_enqueue_style('statistics');
 
     if(is_page('blog')){
         wp_register_style('blog', get_template_directory_uri() . '/assets/css/blog.css', array(), false, 'all');

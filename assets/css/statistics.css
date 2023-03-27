@@ -1,0 +1,16 @@
+.statistics-view {
+  background-color: black;
+  height: 250px;
+  align-items: center;
+  display: flex;
+}
+.statistics .col-3 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.statistics .col-3 h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
