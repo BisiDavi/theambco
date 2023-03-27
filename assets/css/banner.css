@@ -62,6 +62,11 @@
   color: #004d43;
 }
 
+.slider_1 #hero_text {
+  transform: unset !important;
+  opacity: unset !important;
+}
+
 @media (max-width: 768px) {
   .mobile-hero-text {
     display: block;

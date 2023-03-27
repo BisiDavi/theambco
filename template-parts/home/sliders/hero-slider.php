@@ -16,7 +16,7 @@
  $textOrder = $evenOrOdd === 1 ? "order-2" : "order-1";
  ?>
 
-<div class="swiper-slide" id="swiperSlider" data-slider-count="slider-<? echo $index; ?>">
+<div class="swiper-slide slider_<? echo $index; ?>" id="swiperSlider">
     <div class="d-lg-flex flex-column flex-lg-row align-items-center content banner justify-content-between">
         <div class="image_view col-lg-6 px-0 col-12 <?php echo $imageOrder; ?>">
             <div class="overlay"></div>
