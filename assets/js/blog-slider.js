@@ -1,6 +1,7 @@
 let blogSwiper = new Swiper(".blogSwiper", {
   slidesPerView: 4,
   spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: ".blogSwiperButtonNext",
     prevEl: ".blogSwiperButtonPrev",

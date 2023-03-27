@@ -17,15 +17,18 @@
             <p>
             The Ambulance Company is proud to offer our services all throughout the country of Nigeria. For us, nothing is more important than increasing access to healthcare for the thousands of Nigerians out there who struggle each and every day to access the care that they deserve. 
             </p>
-            <a href="/services" class="round-btn">View all services</a>
+            <a href="/services" class="round-btn">View all services →</a>
         </div>
         <div class="col-lg-6 col-12 right">
         <?
                 if ($servicesPost->have_posts()) {
+                    $index = 0;
                     while ($servicesPost->have_posts()) {
+                        ++$index;
                         $servicesPost->the_post();
+                        $lastCard = $index === 5 ? "last" : ""
                         ?>
-                        <div class="service_card">
+                        <div class="service_card <? echo $lastCard; ?>">
                             <? echo the_title(); ?>
                         </div>    
                 <? }

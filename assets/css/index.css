@@ -145,7 +145,7 @@ nav ul li {
 }
 
 .home_contact_us .wp-block-column {
-  max-width: 450px;
+  max-width: 400px;
   border-radius: 30px;
   border-top-right-radius: 50px;
 }
@@ -276,6 +276,7 @@ main.container-fluid {
 .services-view a.round-btn {
   background-color: #004d43;
   color: white;
+  margin-top: 20px;
 }
 .services-view a.round-btn:hover {
   color: #004d43;
@@ -297,10 +298,18 @@ main.container-fluid {
   box-shadow: 10px 10px 50px 3px rgb(46 172 50 / 45%);
 }
 
+.service_card.last {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 30%;
+}
+
 .services-view .right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 50px;
+  position: relative;
 }
 
 footer.footer {
