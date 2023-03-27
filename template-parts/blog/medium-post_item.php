@@ -7,6 +7,6 @@
     <? echo the_post_thumbnail(); ?>
     <div class="post-text-content">
         <h6> <? echo the_title(); ?> </h6>
-        <p>Posted on: <? echo $publishedOn; ?> </p>
+        <p class="d-lg-flex d-none">Posted on: <? echo $publishedOn; ?> </p>
     </div>
 </a>
