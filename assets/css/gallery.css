@@ -53,6 +53,11 @@
   color: white;
 }
 
+a.gallery-view-item img:hover {
+  transform: scale(1.03);
+  transition: 1s;
+}
+
 @media (min-width: 1500px) {
   .gallery-view {
     display: grid;
