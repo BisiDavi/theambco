@@ -11,7 +11,7 @@ get_header('home');
 
 
 // load slider post loop
-get_template_part('template-parts/contact/index', 'contact');
+get_template_part('template-parts/gallery/index', 'gallery');
 
 get_footer('home');
 ?>
