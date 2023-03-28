@@ -47,10 +47,11 @@ function animate(obj, initVal, lastVal, duration) {
   window.requestAnimationFrame(step);
 }
 
-let text1 = document.getElementById("statsCount1");
-let text2 = document.getElementById("statsCount2");
-let text3 = document.getElementById("statsCount3");
-let text4 = document.getElementById("statsCount4");
+const text1 = document.getElementById("statsCount1");
+const text2 = document.getElementById("statsCount2");
+const text3 = document.getElementById("statsCount3");
+const text4 = document.getElementById("statsCount4");
+const statisticsView = document.querySelector(".statistics-view");
 
 const stat1 = Number(text1.textContent);
 const stat2 = Number(text2.textContent);
@@ -60,6 +61,13 @@ const stat4 = Number(text4.textContent);
 const load = () => {
   animate(text1, 0, stat1, 7000);
   animate(text2, 0, stat2, 7000);
-  animate(text3, 0, stat3, 7000);
-  animate(text4, 0, stat4, 7000);
+  animate(text3, 0, stat3, 2000);
+  animate(text4, 0, stat4, 2000);
 };
+
+document.addEventListener("scroll", function () {
+  const isStatisticsCounterVisible = isInViewport(statisticsView);
+  if (isStatisticsCounterVisible) {
+    load();
+  }
+});
