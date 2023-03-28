@@ -72,6 +72,8 @@ function load_css()
     if(is_page('gallery')){
         wp_register_style('gallery', get_template_directory_uri() . '/assets/css/gallery.css', array(), false, 'all');
         wp_enqueue_style('gallery');
+        wp_register_style('lightbox', get_template_directory_uri() . '/assets/css/lightbox.min.css', array(), false, 'all');
+        wp_enqueue_style('lightbox');
     }
 }
 
@@ -96,6 +98,9 @@ function load_js()
         wp_enqueue_script('about-us', get_template_directory_uri() . '/assets/js/about-us.js', array(), '1.0.0', true);
         wp_enqueue_script('blog-slider', get_template_directory_uri() . '/assets/js/blog-slider.js', array('swiper-bundle'), '1.0.0', true);
         wp_enqueue_script('statistics', get_template_directory_uri() . '/assets/js/statistics.js', NULL, NULL, true);
+    }
+    if(is_page('gallery')){
+        wp_enqueue_script('lightbox', get_template_directory_uri() . '/assets/js/lightbox-plus-jquery.min.js', array('jquery'), NULL, true);
     }
 }
 
