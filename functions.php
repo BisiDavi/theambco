@@ -68,6 +68,11 @@ function load_css()
         wp_register_style('contact', get_template_directory_uri() . '/assets/css/contact.css', array(), false, 'all');
         wp_enqueue_style('contact');
     }
+
+    if(is_page('gallery')){
+        wp_register_style('gallery', get_template_directory_uri() . '/assets/css/gallery.css', array(), false, 'all');
+        wp_enqueue_style('gallery');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'load_css');
