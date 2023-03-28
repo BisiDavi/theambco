@@ -132,7 +132,7 @@
     height: 250px;
   }
   .post-text-content {
-    height: 85px;
+    height: unset;
   }
   .medium-post .post-view {
     margin: 20px 0px;

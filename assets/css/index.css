@@ -15,7 +15,7 @@ body {
 }
 
 li.current-menu-item a {
-  color: #62ee25;
+  color: rgb(84, 179, 84);
   font-weight: 700;
 }
 
