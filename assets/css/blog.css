@@ -134,4 +134,7 @@
   .post-text-content {
     height: 85px;
   }
+  .medium-post .post-view {
+    margin: 20px 0px;
+  }
 }

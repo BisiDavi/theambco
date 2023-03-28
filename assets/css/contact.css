@@ -32,4 +32,7 @@
   .page_contact-us {
     height: unset;
   }
+  .home_contact_us .wp-block-column h4 {
+    font-size: 16px;
+  }
 }

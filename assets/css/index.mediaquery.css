@@ -68,7 +68,7 @@
   }
 
   #about_us_content h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .about-us .about_img,
@@ -100,7 +100,7 @@
   /* contact-us-view  */
 
   .container-fluid.contact-us-view h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .container-fluid.contact-us-view .text-content p {
@@ -119,6 +119,16 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 600;
+  }
+
+  .services-view h4 {
+    font-size: 18px;
+  }
+
+  .services-view h6 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   /* footer */

@@ -167,7 +167,7 @@
 .blog-slider-view .swiper-button-lock {
   display: flex;
 }
- 
+
 .blog-slider-view .paginate-slider {
   display: flex;
   width: 100%;
@@ -191,5 +191,12 @@
   }
   .other-post-view p {
     font-size: 13px;
+  }
+  .blog-slider-view .blog-view .blog-text-content {
+    height: 200px;
+  }
+  .blog-slider-view h3 {
+    font-size: 24px;
+    margin-top: 40px !important;
   }
 }
