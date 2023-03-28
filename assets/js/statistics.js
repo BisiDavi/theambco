@@ -1,28 +1,24 @@
-const counters = document.querySelectorAll(".count");
-const speed = 10;
-
-counters.forEach((counter) => {
-  const animate = () => {
-    const value = +counter.getAttribute("akhi");
-    const data = +counter.innerText;
-
-    console.log("data", data);
-    console.log("value", value);
-
-    const time = value / speed;
-    if (data < value) {
-      counter.innerText = Math.ceil(data + time);
-      setTimeout(animate, 1000);
-    } else {
-      counter.innerText = value;
-    }
-  };
-
-  //   animate();
-});
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
 function animate(obj, initVal, lastVal, duration) {
   let startTime = null;
+
+  console.log(
+    "obj, initVal, lastVal, duration",
+    obj,
+    initVal,
+    lastVal,
+    duration
+  );
 
   //get the current timestamp and assign it to the currentTime variable
   let currentTime = Date.now();
@@ -50,6 +46,7 @@ function animate(obj, initVal, lastVal, duration) {
   //start animating
   window.requestAnimationFrame(step);
 }
+
 let text1 = document.getElementById("statsCount1");
 let text2 = document.getElementById("statsCount2");
 let text3 = document.getElementById("statsCount3");

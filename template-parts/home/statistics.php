@@ -1,4 +1,4 @@
-<div class="statistics-view" onload="load()">
+<div class="statistics-view" onload="load">
     <? 
         $postArgs = array(
             'post_type' => 'post', 
