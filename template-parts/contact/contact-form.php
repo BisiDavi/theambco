@@ -1,17 +1,3 @@
-<?
-function debug_to_console($data, $context = 'Debug in Console') {
-
-    // Buffering to solve problems frameworks, like header() in this and not a solid return.
-    ob_start();
-
-    $output  = 'console.info(\'' . $context . ':\');';
-    $output .= 'console.log(' . json_encode($data) . ');';
-    $output  = sprintf('<script>%s</script>', $output);
-
-    echo $output;
-}
-?>
-
 <form class="contact-form mx-lg-5 m-0 my-lg-4 pb-5 pb-lg-0">
 
     <? 
@@ -22,7 +8,6 @@ function debug_to_console($data, $context = 'Debug in Console') {
             <div class="form-group row">
                 <?
                     foreach ($jsonArray as $formElementData) {
-                        // debug_to_console($formElementData['type'],'$formElementData->type');
                         if($formElementData['type'] === 'input'){
                             get_template_part('template-parts/form/input', 'input', array('input' => $formElementData));
                         }else if($formElementData['type'] === 'textarea'){
