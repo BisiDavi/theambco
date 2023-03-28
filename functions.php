@@ -82,23 +82,26 @@ add_action('wp_enqueue_scripts', 'load_css');
 // load js
 function load_js()
 {
-    // The core GSAP library
-    wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true );
-    // ScrollTrigger - with gsap.js passed as a dependency
-    wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
     wp_enqueue_script('jquery');
-
+    
     wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
     
-    wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('swiper',  get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle','gsap-js'), '1.0.0', true);
-    wp_enqueue_script('supporter-slider', get_template_directory_uri() . '/assets/js/supporter-slider.js', array('swiper-bundle'), '1.0.0', true);
+    if(is_home() || is_page('about-us') || is_page('services') ){
+        // The core GSAP library
+        wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true );
+        // ScrollTrigger - with gsap.js passed as a dependency
+        wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
+        wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);
+        wp_enqueue_script('swiper',  get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle','gsap-js'), '1.0.0', true);
+    }
     
     if(is_home()){
         wp_enqueue_script('about-us', get_template_directory_uri() . '/assets/js/about-us.js', array(), '1.0.0', true);
         wp_enqueue_script('blog-slider', get_template_directory_uri() . '/assets/js/blog-slider.js', array('swiper-bundle'), '1.0.0', true);
         wp_enqueue_script('statistics', get_template_directory_uri() . '/assets/js/statistics.js', NULL, NULL, true);
+        wp_enqueue_script('supporter-slider', get_template_directory_uri() . '/assets/js/supporter-slider.js', array('swiper-bundle'), '1.0.0', true);
     }
+
     if(is_page('gallery')){
         wp_enqueue_script('lightbox', get_template_directory_uri() . '/assets/js/lightbox-plus-jquery.min.js', array('jquery'), NULL, true);
     }
