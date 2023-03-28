@@ -17,7 +17,7 @@
     $instagram = get_post_field('instagram',305);
 ?>
 
-            <footer class="footer py-5 text-white">
+            <footer class="footer py-5 text-white pr-md-5">
                 <div class="container d-flex flex-column flex-md-row  justify-content-between">
                     <div class="logo col-12 col-md-4  mb-4 mb-lg-0">
                         <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
@@ -60,7 +60,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="contact  col-md-4 col-12">
+                    <div class="contact  col-md-4 px-md-0 col-12 ml-lg-5">
                         <h4>CONTACT</h4>
                         <? echo $contact_post; ?>
                     </div>
