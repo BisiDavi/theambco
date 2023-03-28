@@ -34,7 +34,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="service_company justify-content-betwee col-md-4 d-flex flex-md-column flex-lg-row">
+                    <div class="service_company justify-content-lg-between col-12 col-md-4 d-flex flex-md-column flex-lg-row">
                         <div class="services ">
                             <h4>OUR SERVICES</h4>
                             <ul>
@@ -47,7 +47,7 @@
                                 <?  } ?>
                             </ul>
                         </div>
-                        <div class="company">
+                        <div class="company mx-5 mx-md-0">
                             <h4>COMPANY</h4>
                             <ul>
                                 <? foreach ($company_menu as $item ) { ?>
