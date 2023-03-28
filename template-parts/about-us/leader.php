@@ -13,7 +13,7 @@
     $position = get_post_field('position',$post->ID);
 ?>
 
-<div class="col-lg-4 col-12">
+<div class="col-lg-4 col-md-6 col-12">
     <div class="leader">
         <div class="image-view">
             <? echo the_post_thumbnail(); ?>
