@@ -16,7 +16,7 @@
             while($galleryPost->have_posts()){
                 $galleryPost->the_post();
                 ?>
-                <a class="gallery-view-item" href="#" data-lightbox="example-set">
+                <a class="gallery-view-item" href="<?echo get_the_post_thumbnail_url($post->ID,'post_thumbnail'); ?>" data-lightbox="example-set">
                     <? echo the_post_thumbnail(); ?>
                 </a>
            <? }
