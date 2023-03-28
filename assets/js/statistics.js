@@ -1,3 +1,14 @@
+const text1 = document.getElementById("statsCount1");
+const text2 = document.getElementById("statsCount2");
+const text3 = document.getElementById("statsCount3");
+const text4 = document.getElementById("statsCount4");
+const statisticsView = document.querySelector(".statistics-view");
+
+const stat1 = Number(text1.textContent);
+const stat2 = Number(text2.textContent);
+const stat3 = Number(text3.textContent);
+const stat4 = Number(text4.textContent);
+
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -11,14 +22,6 @@ function isInViewport(element) {
 
 function animate(obj, initVal, lastVal, duration) {
   let startTime = null;
-
-  console.log(
-    "obj, initVal, lastVal, duration",
-    obj,
-    initVal,
-    lastVal,
-    duration
-  );
 
   //get the current timestamp and assign it to the currentTime variable
   let currentTime = Date.now();
@@ -47,27 +50,28 @@ function animate(obj, initVal, lastVal, duration) {
   window.requestAnimationFrame(step);
 }
 
-const text1 = document.getElementById("statsCount1");
-const text2 = document.getElementById("statsCount2");
-const text3 = document.getElementById("statsCount3");
-const text4 = document.getElementById("statsCount4");
-const statisticsView = document.querySelector(".statistics-view");
-
-const stat1 = Number(text1.textContent);
-const stat2 = Number(text2.textContent);
-const stat3 = Number(text3.textContent);
-const stat4 = Number(text4.textContent);
-
-const load = () => {
+function loadAnimation() {
   animate(text1, 0, stat1, 7000);
   animate(text2, 0, stat2, 7000);
   animate(text3, 0, stat3, 2000);
   animate(text4, 0, stat4, 2000);
-};
+}
 
-document.addEventListener("scroll", function () {
-  const isStatisticsCounterVisible = isInViewport(statisticsView);
-  if (isStatisticsCounterVisible) {
-    load();
-  }
+window.addEventListener("load", function () {
+  window.localStorage.setItem("statsCounter", false);
 });
+
+let statsCounter = window.localStorage.getItem("statsCounter");
+
+document.addEventListener(
+  "scroll",
+  function () {
+    const isStatisticsCounterVisible = isInViewport(statisticsView);
+    console.log("isStatisticsCounterVisible", isStatisticsCounterVisible);
+    if (isStatisticsCounterVisible && !statsCounter) {
+      window.localStorage.setItem("statsCounter", true);
+      loadAnimation();
+    }
+  },
+  { passive: true }
+);
