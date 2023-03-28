@@ -72,6 +72,13 @@ a.gallery-view-item img:hover {
   }
 }
 
+@media (max-width: 768px) and (min-width: 600px) {
+  div.gallery-view .gallery-view-item img {
+    height: 350px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .gallery {
     margin: 50px 0px;

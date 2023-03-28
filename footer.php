@@ -34,7 +34,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="servicescol-lg-3 col-12">
+                    <div class="services col-lg-3 col-12">
                         <h4>OUR SERVICES</h4>
                         <ul>
                             <? foreach ($service_menu as $item ) { ?>
