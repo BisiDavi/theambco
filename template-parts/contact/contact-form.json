@@ -4,13 +4,13 @@
       "label": "First Name",
       "placeholder": "Enter your first name",
       "type": "input",
-      "name": "firstName"
+      "name": "First Name"
     },
     {
       "label": "Last Name",
       "placeholder": "Enter your last name",
       "type": "input",
-      "name": "lastName"
+      "name": "Last Name"
     }
   ],
   [
@@ -18,13 +18,13 @@
       "label": "Email",
       "placeholder": "Enter your email address",
       "type": "input",
-      "name": "email"
+      "name": "Email"
     },
     {
       "label": "Phone",
       "placeholder": "Enter your phone number",
       "type": "input",
-      "name": "phone"
+      "name": "Phone"
     }
   ],
   [
@@ -46,7 +46,7 @@
       "label": "Message",
       "placeholder": "Enter your message",
       "type": "textarea",
-      "name": "message"
+      "name": "Message"
     }
   ]
 ]

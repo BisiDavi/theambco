@@ -4,7 +4,7 @@
     <label htmlFor="<? echo $input['name']; ?>"><? echo $input['label']; ?></label>
     <select 
         id="<? echo  $input['name']; ?>" 
-        name="<?  $input['name']; ?>"
+        name="<? echo $input['name']; ?>"
         class="form-control"  
     >
     <? foreach ($input['options'] as $key => $option) { ?>

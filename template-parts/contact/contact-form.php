@@ -1,4 +1,7 @@
-<form class="contact-form mx-lg-5 m-0 my-lg-4 pb-5 pb-lg-0">
+<form class="contact-form mx-lg-5 m-0 my-lg-4 pb-5 pb-lg-0"
+    action="https://formspree.io/f/xjvdabzn"
+    method="POST"
+>
 
     <? 
         $json = file_get_contents(__DIR__ . '/contact-form.json');
@@ -19,5 +22,5 @@
                 ?>
             </div>
     <? } ?>
-    <button class="submit round-btn mx-auto mt-4">Submit</button>
+    <button class="submit round-btn mx-auto mt-4" type="submit">Submit</button>
 </form>
