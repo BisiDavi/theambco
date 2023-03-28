@@ -103,17 +103,18 @@
   .medium-post .grid-post {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 0px 5px;
   }
   .medium-post .post-view img {
     width: 100%;
     height: 250px;
   }
   .medium-post {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .medium-post h3 {
-    margin: 60px auto 20px;
+    margin: 40px auto 20px;
   }
   .post-text-content {
     height: 80px;
@@ -124,6 +125,9 @@
 }
 
 @media (max-width: 400px) {
+  .medium-post {
+    margin-top: 60px;
+  }
   .medium-post .grid-post {
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
