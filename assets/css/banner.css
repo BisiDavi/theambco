@@ -67,6 +67,19 @@
   opacity: unset !important;
 }
 
+@media (max-width: 768px) and (min-width: 500px) {
+  div.mobile-hero-text {
+    padding: 25px 40px;
+  }
+  .mobile-hero-text h3.title {
+    font-size: 40px;
+  }
+  .image_view .mobile-hero-text p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile-hero-text {
     display: block;

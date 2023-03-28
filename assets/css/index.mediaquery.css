@@ -143,3 +143,22 @@
     max-height: 350px;
   }
 }
+
+@media (width: 768px) {
+  div.wp-block-columns.contact_us_group {
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    gap: 15px;
+  }
+  footer.footer .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .about-us .about_img,
+  .about-us .image-view .overlay {
+    height: 400px !important;
+  }
+}

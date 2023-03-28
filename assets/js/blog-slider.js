@@ -26,6 +26,10 @@ let blogSwiper = new Swiper(".blogSwiper", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
+    760: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     1000: {
       slidesPerView: 3,
       spaceBetween: 10,

@@ -18,8 +18,8 @@
 ?>
 
             <footer class="footer py-5 text-white">
-                <div class="container d-flex flex-column flex-lg-row justify-content-between">
-                    <div class="logo col-lg-3 col-12 mb-4 mb-lg-0">
+                <div class="container d-flex flex-column flex-md-row flex-lg-row justify-content-between">
+                    <div class="logo col-lg-3  col-12 mb-4 mb-lg-0">
                         <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
                         <h6 class="my-lg-4 my-2">Swift access to high quality medical care </h6>
                         <div class="footer-social-links">
@@ -34,7 +34,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="services col-lg-3 col-12">
+                    <div class="servicescol-lg-3 col-12">
                         <h4>OUR SERVICES</h4>
                         <ul>
                             <? foreach ($service_menu as $item ) { ?>
@@ -46,7 +46,7 @@
                             <?  } ?>
                         </ul>
                     </div>
-                    <div class="company col-lg-2 col-12">
+                    <div class="company  col-lg-2 col-12">
                         <h4>COMPANY</h4>
                         <ul>
                             <? foreach ($company_menu as $item ) { ?>
@@ -58,7 +58,7 @@
                             <?  } ?>
                         </ul>
                     </div>
-                    <div class="contact col-lg-4 col-12">
+                    <div class="contact  col-lg-4 col-12">
                         <h4>CONTACT</h4>
                         <? echo $contact_post; ?>
                     </div>
