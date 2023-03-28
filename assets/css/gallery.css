@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin: 100px 0px;
+  margin: 130px 0px 50px;
 }
 
 .gallery-view .gallery-view-item img {
