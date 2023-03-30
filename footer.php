@@ -13,6 +13,7 @@
     $company_menu = wp_get_nav_menu_items(2); 
     $contact_post = get_post_field('post_content',91);
     $facebook_link = get_post_field('facebook',305);
+    $youtube_link = get_post_field('youtube',305);
     $twitter_link = get_post_field('twitter',305);
     $instagram = get_post_field('instagram',305);
 ?>
@@ -30,6 +31,9 @@
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/images/twitter.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
                             </a>
                             <a href="<? echo $facebook_link;?>" target="_blank">
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/facebook.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
+                            </a>
+                            <a href="<? echo $youtube_link;?>" target="_blank">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/images/facebook.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
                             </a>
                         </div>
