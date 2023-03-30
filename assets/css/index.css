@@ -71,6 +71,7 @@ nav ul li {
   width: 100%;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  height: auto;
 }
 
 .about-us ul {
@@ -89,7 +90,7 @@ nav ul li {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   top: 0px;
-  height: 450px;
+  height: 618px;
 }
 
 .round-btn {

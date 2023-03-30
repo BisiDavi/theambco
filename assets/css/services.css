@@ -1,5 +1,5 @@
 .service_image img {
-  height: 350px;
+  height: auto;
   width: 100%;
   border-radius: 10px;
 }
