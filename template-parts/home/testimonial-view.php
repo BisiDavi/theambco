@@ -12,7 +12,7 @@
 <div class="testimonial_view container-fluid py-5">
     <h4 class="text-center">Testimonials</h4>
     <div class="d-flex flex-column align-items-start mt-4 testimonial_view_group">
-        <div class="swiper testimonialSlider mx-lg-5">
+        <div class="swiper testimonialSlider container mx-lg-5">
             <div class="swiper-wrapper">
                 <?
                     $testimonialArgs = array(
@@ -21,8 +21,8 @@
                         'order' => 'ASC',
                         'orderby' => 'date'
                     );
-                    $testimonialPost = new WP_Query($testimonialArgs);
 
+                    $testimonialPost = new WP_Query($testimonialArgs);
                     if($testimonialPost->have_posts()){
                         while($testimonialPost->have_posts()){
                             $testimonialPost->the_post();
