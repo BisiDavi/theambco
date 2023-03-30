@@ -25,7 +25,7 @@
 .testimonial .image-view img {
   height: 100px !important;
   width: 100px !important;
-  border-radius: 50%;
+  border-radius: 50% !important;
   margin: auto;
   display: flex;
 }

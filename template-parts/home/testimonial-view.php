@@ -12,7 +12,7 @@
 <div class="testimonial_view container-fluid py-5">
     <h4 class="text-center">Testimonials</h4>
     <div class="d-flex flex-column align-items-start mt-4 testimonial_view_group">
-        <div class="swiper testimonialSlider container mx-lg-5">
+        <div class="swiper testimonialSlider container">
             <div class="swiper-wrapper">
                 <?
                     $testimonialArgs = array(
