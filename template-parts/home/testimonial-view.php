@@ -20,7 +20,7 @@
 
 <div class="testimonial_view container-fluid py-5">
     <h4 class="text-center">Testimonials</h4>
-    <div class="d-flex align-items-start">
+    <div class="d-flex align-items-start mt-4">
         <?
             if($testimonialPost->have_posts()){
                 while($testimonialPost->have_posts()){

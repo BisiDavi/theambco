@@ -16,5 +16,5 @@
     <div class="text-view">
         <? echo the_content(); ?>
     </div>
-    <h4><? echo $name; ?></h4>
+    <h6><? echo $name; ?></h6>
 </div>
