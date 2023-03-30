@@ -87,7 +87,7 @@ add_action('wp_enqueue_scripts', 'load_css');
 // load js
 function load_js()
 {
-    // wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery');
     
     wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
     
@@ -105,6 +105,7 @@ function load_js()
         wp_enqueue_script('blog-slider', get_template_directory_uri() . '/assets/js/blog-slider.js', array('swiper-bundle'), '1.0.0', true);
         wp_enqueue_script('statistics', get_template_directory_uri() . '/assets/js/statistics.js', NULL, NULL, true);
         wp_enqueue_script('supporter-slider', get_template_directory_uri() . '/assets/js/supporter-slider.js', array('swiper-bundle'), '1.0.0', true);
+        wp_enqueue_script('testimonial-slider', get_template_directory_uri() . '/assets/js/testimonial-slider.js', array('swiper-bundle'), '1.0.0', true);
     }
 
     if(is_page('gallery')){

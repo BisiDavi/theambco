@@ -1,7 +1,8 @@
-let blogSwiper = new Swiper(".testimonialSlider", {
-  slidesPerView: 8,
+let testimonialSlider = new Swiper(".testimonialSlider", {
+  slidesPerView: 5,
   spaceBetween: 10,
   loop: true,
+  animating: true,
   navigation: {
     nextEl: ".testimonialButtonNext",
     prevEl: ".testimonialButtonPrev",
@@ -9,6 +10,9 @@ let blogSwiper = new Swiper(".testimonialSlider", {
   pagination: {
     el: ".testimonialPagination",
     type: "bullets",
+  },
+  autoplay: {
+    delay: 5000,
   },
   breakpoints: {
     // when window width is >= 320px
@@ -35,7 +39,7 @@ let blogSwiper = new Swiper(".testimonialSlider", {
       spaceBetween: 10,
     },
     1440: {
-      slidesPerView: 8,
+      slidesPerView: 5,
       spaceBetween: 10,
     },
   },
