@@ -35,7 +35,9 @@
 }
 
 .supporter-slider .swiper-button-next,
-.supporter-slider .swiperButtonPrev {
+.supporter-slider .swiperButtonPrev,
+.testimonial_view_group .swiper-button-next,
+.testimonial_view_group .swiper-button-prev {
   background-color: white;
   border-radius: 50%;
   font-size: 10px;
@@ -44,7 +46,9 @@
 }
 
 .supporter-slider .swiper-button-next::after,
-.supporter-slider .swiper-button-prev::after {
+.supporter-slider .swiper-button-prev::after,
+.testimonial_view_group .swiper-button-next::after,
+.testimonial_view_group .swiper-button-prev::after {
   font-size: 15px;
 }
 
