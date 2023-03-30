@@ -34,7 +34,7 @@
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/images/facebook.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
                             </a>
                             <a href="<? echo $youtube_link;?>" target="_blank">
-                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/facebook.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
+                                <img src="<? echo get_template_directory_uri(); ?>/assets/images/youtube.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
                             </a>
                         </div>
                     </div>
