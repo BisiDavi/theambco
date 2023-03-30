@@ -25,6 +25,8 @@ get_template_part('template-parts/home/statistics', 'statistics');
 
 get_template_part('template-parts/home/contact-us-view', 'contact-us-view');
 
+get_template_part('template-parts/home/testimonial-view', 'testimonial-view');
+
 get_template_part('template-parts/home/sliders/supporter-slider-view', 'supporter-slider-view');
 
 get_footer('home');
