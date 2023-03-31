@@ -13,11 +13,10 @@ get_header('home');
 // load slider post loop
 get_template_part('template-parts/contact/index', 'contact');
 
-
-get_template_part('template-parts/contact/index', 'contact');
+get_template_part('template-parts/contact/faqs', 'faqs');
 
 //map
-get_template_part('template-parts/contact/faqs', 'faqs');
+get_template_part('template-parts/contact/map', 'map');
 
 get_footer('home');
 ?>

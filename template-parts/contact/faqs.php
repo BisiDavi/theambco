@@ -1,5 +1,5 @@
-<div class="faqs">
-    <h3>FAQ</h3>
+<div class="faqs py-5 container">
+    <h3 class="text-center my-5">FAQ</h3>
     <?
         $faqArgs = array(
             'post_tye' => 'post',
