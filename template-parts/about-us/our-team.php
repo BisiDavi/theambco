@@ -1,4 +1,4 @@
-<div class="our_team">
+<div class="our_team mb-5">
     <h3 class="text-center mx-auto my-5">Meet our Team</h3>
     <div class="container mx-auto d-flex flex-md-row flex-column">
         <? 

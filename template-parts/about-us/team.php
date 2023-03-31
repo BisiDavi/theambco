@@ -17,7 +17,7 @@
         <? echo the_post_thumbnail(); ?>
     </div>
     <div class="text">
-        <? echo the_title(); ?>
+        <h6><? echo the_title(); ?></h6>
         <p><? echo $role; ?></p>
     </div>
 </div>
