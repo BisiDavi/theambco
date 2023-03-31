@@ -3,7 +3,7 @@
     $answer = get_post_field("answer", $post->ID);
 ?>
 
-<div class="faq-item my-2">
+<div class="faq-item">
     <div class="faq-header">
         <? echo $question; ?>
     </div>
