@@ -90,7 +90,7 @@ nav ul li {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   top: 0px;
-  height: 618px;
+  height: -webkit-fill-available;
 }
 
 .round-btn {

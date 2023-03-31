@@ -28,6 +28,12 @@
   font-weight: 600;
 }
 
+/* FAQ */
+.faq-item{
+  
+}
+
+
 @media (max-width: 768px) {
   .page_contact-us {
     height: unset;
@@ -36,3 +42,4 @@
     font-size: 16px;
   }
 }
+
