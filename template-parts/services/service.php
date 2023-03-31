@@ -5,7 +5,8 @@
  $textOrder = $evenOrOdd === 1 ? "order-lg-2" : "order-lg-1";
 ?>
 
-<div  id="<? echo $args['post_slug']; ?>" class="service d-flex flex-lg-row flex-column align-items-center justify-content-between my-5">
+<div class="service d-flex flex-lg-row flex-column align-items-center justify-content-between my-5">
+    <span class="anchor" id="<? echo $args['post_slug']; ?>"></span>
     <div class="col-lg-6 col-12 <?php echo $imageOrder; ?> service_image">
         <? echo the_post_thumbnail(); ?>
     </div>
