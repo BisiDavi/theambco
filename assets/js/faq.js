@@ -1,6 +1,11 @@
-const faqHeader = document.getElementById("faqHeader");
+const faqHeadersArray = document.getElementsByClassName("faq-header");
+const faqHeaders = [...faqHeadersArray];
 const faqBody = document.getElementById("faqBody");
 
-faqHeader.addEventListener('click', () => {
-    
-})
+console.log("faqHeaders", faqHeaders, "faqHeadersArray", faqHeadersArray);
+
+faqHeaders.forEach((element) => {
+  element.addEventListener("click", () => {
+    console.log("I was clicked");
+  });
+});

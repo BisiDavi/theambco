@@ -113,7 +113,6 @@ function load_js()
     }
 
     if(is_page('contact')){
-
         wp_register_script('faq', get_template_directory_uri() . '/assets/js/faq.js', array(), '1.0.0', true);
         wp_enqueue_script('faq');
     }

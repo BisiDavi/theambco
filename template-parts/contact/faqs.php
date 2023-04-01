@@ -1,3 +1,5 @@
+<? require __DIR__ . '../../../utils/toSlug.php'; ?>
+
 <div class="faqs py-5 container">
     <h3 class="text-center my-5">FAQ</h3>
     <?
@@ -12,7 +14,9 @@
         if($faqPost->have_posts()){
             while($faqPost->have_posts()){
                 $faqPost->the_post();
-                get_template_part("template-parts/contact/faq", "faq");
+                $faqHeader= get_post_field("question",$faqPost->post->ID);
+                $faqHeaderSlug = toSlugify($faqHeader);
+                get_template_part("template-parts/contact/faq", "faq", array("faqHeaderSlug" => $faqHeaderSlug)); 
             }
         }
     ?>

@@ -1,4 +1,4 @@
-<!-- <? require __DIR__ . '../../../utils/toSlug.php'; ?> -->
+<? require __DIR__ . '../../../utils/toSlug.php'; ?>
 
 <div class="our-services container py-5">
     <? $postArgs = array(
