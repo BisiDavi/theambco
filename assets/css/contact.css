@@ -50,10 +50,15 @@
 .faq-item .faq-header span {
   font-size: 30px;
 }
+
 .faq-body {
   padding: 20px 0px 40px 20px;
   background-color: white;
   display: none;
+}
+
+.faq-item .faq-header.active + .faq-body {
+  display: block;
 }
 
 @media (max-width: 768px) {
