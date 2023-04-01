@@ -342,8 +342,3 @@ footer.footer ul li a {
   flex-wrap: wrap;
   display: flex;
 }
-
-/* whatsapp chat */
-.qlwapp-footer {
-  display: none !important;
-}
