@@ -4,10 +4,10 @@
 ?>
 
 <div class="faq-item">
-    <div class="faq-header">
-        <? echo $question; ?>
+    <div class="faq-header" id="faqHeader">
+        <? echo $question; ?><span>˅</span>
     </div>
-    <div class="faq-body">
+    <div class="faq-body" id="faqBody">
         <? echo $answer; ?>
     </div>
 </div>

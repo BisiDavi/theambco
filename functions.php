@@ -111,6 +111,12 @@ function load_js()
     if(is_page('gallery')){
         wp_enqueue_script('lightbox', get_template_directory_uri() . '/assets/js/lightbox-plus-jquery.min.js', NULL, NULL, true);
     }
+
+    if(is_page('contact')){
+
+        wp_register_script('faq', get_template_directory_uri() . '/assets/js/faq.js', array(), '1.0.0', true);
+        wp_enqueue_script('faq');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
