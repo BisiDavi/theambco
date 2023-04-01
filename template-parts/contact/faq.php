@@ -8,7 +8,7 @@
         <h6 class="title"><? echo $question; ?></h6>
         <span>˅</span>
     </div>
-    <div class="faq-body" id="faqBody">
+    <div class="faq-body animate__animated">
         <? echo $answer; ?>
     </div>
 </div>

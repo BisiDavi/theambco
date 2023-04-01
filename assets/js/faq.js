@@ -6,9 +6,10 @@ faqHeaders.forEach((element) => {
   element.addEventListener("click", () => {
     if (!element.classList.contains("active")) {
       element.classList.add("active");
+      element.classList.add("animate__fadeIn");
     } else {
+      element.classList.remove("animate__fadeIn");
       element.classList.remove("active");
     }
-    console.log("faqSlug", faqSlug);
   });
 });

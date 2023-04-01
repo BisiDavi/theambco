@@ -59,6 +59,7 @@
 
 .faq-item .faq-header.active + .faq-body {
   display: block;
+  transition: 1s;
 }
 
 @media (max-width: 768px) {

@@ -12,7 +12,6 @@
         if($faqPost->have_posts()){
             while($faqPost->have_posts()){
                 $faqPost->the_post();
-                $faqHeader= get_post_field("question",$faqPost->post->ID);
                 get_template_part("template-parts/contact/faq", "faq"); 
             }
         }
