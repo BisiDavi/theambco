@@ -3,11 +3,13 @@
     $customer_care_phone = get_post_field('phone', $post->ID);
     $customer_care_icon_id = get_post_field('customer_care_icon', $post->ID);
     $customer_care_icon = wp_get_attachment_url($customer_care_icon_id);
-    $message = get_post_field('message', $post->ID);
+    $_message = get_post_field('message', $post->ID);
+    $message = urlencode($_message)
+    // urlencode
 ?>
 <a 
     class="customer-care" 
-    href="https://web.whatsapp.com/send?phone=<? echo $customer_care_phone; ?>&text=<? echo $message; ?>" 
+    href="https://wa.me/<? echo $customer_care_phone; ?>?text=<? echo $message; ?>" 
     target="_blank"
 >
     <div class="icon">
