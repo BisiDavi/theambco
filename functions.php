@@ -94,6 +94,8 @@ function load_js()
     
     wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
     
+    wp_enqueue_script('whatsapp', get_template_directory_uri() . '/assets/js/whatsapp.js', array(), '1.0.0', true);
+    
     if(is_home() || is_page('about-us') || is_page('services') ){
         // The core GSAP library
         wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true );

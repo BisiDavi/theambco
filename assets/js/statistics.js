@@ -67,7 +67,7 @@ document.addEventListener(
   "scroll",
   function () {
     const isStatisticsCounterVisible = isInViewport(statisticsView);
-    console.log("isStatisticsCounterVisible", isStatisticsCounterVisible);
+    // console.log("isStatisticsCounterVisible", isStatisticsCounterVisible);
     if (isStatisticsCounterVisible && !statsCounter) {
       window.localStorage.setItem("statsCounter", true);
       loadAnimation();
