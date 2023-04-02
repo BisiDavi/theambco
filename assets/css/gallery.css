@@ -43,13 +43,13 @@
 }
 
 .gallery .pagination span {
-  background: #004d43;
+  background: rgb(84, 179, 84);
   color: white;
 }
 
 .gallery .pagination a:hover {
   text-decoration: none;
-  background-color: #004d43;
+  background-color: rgb(84, 179, 84);
   color: white;
 }
 

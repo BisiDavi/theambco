@@ -133,7 +133,7 @@ nav ul li {
 
 .about_btn_group a.read_more_link:hover {
   text-decoration: underline;
-  color: #004d43;
+  color: rgb(84, 179, 84);
 }
 
 /* home_contact_us */
@@ -273,13 +273,15 @@ main.container-fluid {
 }
 
 .services-view a.round-btn {
-  background-color: #004d43;
+  background-color: rgb(84, 179, 84);
   color: white;
   margin-top: 20px;
+  border: 1px solid rgb(84, 179, 84);
 }
 .services-view a.round-btn:hover {
-  color: #004d43;
+  color: rgb(84, 179, 84);
   background-color: white;
+  border: 1px solid rgb(84, 179, 84);
 }
 
 .service_card {

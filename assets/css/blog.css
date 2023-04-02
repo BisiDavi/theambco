@@ -57,7 +57,7 @@
 
 .medium-post a.post-view:hover h6,
 .medium-post a.post-view:hover p {
-  color: #004d43;
+  color: rgb(84, 179, 84);
 }
 
 .medium-post .pagination {
@@ -82,13 +82,13 @@
 }
 
 .medium-post .pagination span {
-  background: #004d43;
+  background: rgb(84, 179, 84);
   color: white;
 }
 
 .medium-post .pagination a:hover {
   text-decoration: none;
-  background-color: #004d43;
+  background-color: rgb(84, 179, 84);
   color: white;
 }
 

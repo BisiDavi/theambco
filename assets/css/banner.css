@@ -43,7 +43,7 @@
 }
 
 .swiper_slider .swb {
-  background-color: #004d43;
+  background-color: rgb(84, 179, 84);
   border-radius: 50%;
   font-size: 10px;
   height: 30px;
@@ -59,7 +59,7 @@
   background-color: white;
 }
 .swiper_slider .swb:hover::after {
-  color: #004d43;
+  color: rgb(84, 179, 84);
 }
 
 .slider_1 #hero_text {
