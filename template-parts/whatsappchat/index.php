@@ -28,7 +28,7 @@ function debug_to_console($data, $context = 'Debug in Console') {
     $footer_text = get_post_field('footer_text', $chatDetail->ID);
 ?>
     <div class="whatsapp-view">
-        <div class="whatsapp_icon_widget" id="whatsappWidget">
+        <div class="whatsapp_icon_widget animate__animated" id="whatsappWidget">
             <div class="top">
                 <h3><? echo $title; ?></h3>
                 <p><? echo $description; ?></p>

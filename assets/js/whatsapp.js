@@ -1,14 +1,17 @@
-// const whatsappBtn = document.getElementById("whatsappBtn");
+const whatsappBtn = document.getElementById("whatsappBtn");
 const whatsappWidget = document.getElementById("whatsappWidget");
 
 whatsappBtn.addEventListener("click", () => {
-  if (!whatsappWidget.classList.contains("active")) {
-    whatsappWidget.classList.add("active");
-    setTimeout(() => {
-      whatsappWidget.classList.add("animate");
-    }, 100);
+  const whatsappClass = whatsappWidget.classList;
+  if (whatsappClass.contains("animate__fadeOut")) {
+    whatsappClass.remove("animate__fadeOut");
+  }
+  if (!whatsappClass.contains("active")) {
+    whatsappClass.add("active", "animate__fadeIn");
   } else {
-    whatsappWidget.classList.remove("active");
-    whatsappWidget.classList.remove("animate");
+    whatsappClass.replace("animate__fadeIn", "animate__fadeOut");
+    setTimeout(() => {
+      whatsappClass.remove("active");
+    }, 1300);
   }
 });
