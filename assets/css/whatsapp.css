@@ -13,7 +13,7 @@
 .whatsapp_icon_widget {
   display: none;
   position: fixed;
-  bottom: 150px;
+  bottom: 120px;
   left: 20px;
   background-color: white;
   border-radius: 10px;
@@ -27,7 +27,7 @@
 .whatsapp_icon_widget .top {
   background-color: #23d366;
   color: white;
-  padding: 20px;
+  padding: 30px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -53,4 +53,26 @@
   width: 13px;
   height: 13px;
   transform: rotate(45deg);
+}
+
+.whatsapp_icon_widget a.customer-care {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin: 20px 0px;
+}
+
+.whatsapp_icon_widget .icon {
+  margin: 0px 20px;
+}
+
+.whatsapp_icon_widget .icon img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.whatsapp_icon_widget .text-view h5 {
+  font-weight: 600;
 }

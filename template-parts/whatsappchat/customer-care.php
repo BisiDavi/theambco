@@ -1,7 +1,8 @@
 <? 
     $customer_representative_name = get_post_field('customer_representative_name', $post->ID);
-    $customer_care_icon = get_post_field('customer_care_icon', $post->ID);
     $customer_care_phone = get_post_field('phone', $post->ID);
+    $customer_care_icon_id = get_post_field('customer_care_icon', $post->ID);
+    $customer_care_icon = wp_get_attachment_url($customer_care_icon_id);
     $message = get_post_field('message', $post->ID);
 ?>
 <a 
