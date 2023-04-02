@@ -18,6 +18,7 @@
     $instagram = get_post_field('instagram',305);
 ?>
             </main>
+  <? get_template_part('template-parts/whatsappchat/index', 'whatsappchat'); ?>
             <footer class="footer py-5 text-white pr-md-5">
                 <div class="container d-flex flex-column flex-md-row  justify-content-between">
                     <div class="logo col-12 col-md-4  mb-4 mb-lg-0">

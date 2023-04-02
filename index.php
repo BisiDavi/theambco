@@ -29,7 +29,6 @@ get_template_part('template-parts/home/testimonial-view', 'testimonial-view');
 
 get_template_part('template-parts/home/sliders/supporter-slider-view', 'supporter-slider-view');
 
-get_template_part('template-parts/whatsappchat/index', 'whatsappchat');
 get_footer('home');
 
 ?>
