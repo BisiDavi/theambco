@@ -56,7 +56,7 @@
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'mobile-menu',
-                            'menu_class' => 'sub-menu',
+                            'menu_class' => 'sub-menu animate__animated',
                         ));
                         ?>
                     </div>
