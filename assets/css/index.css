@@ -103,6 +103,7 @@ nav ul li {
   display: flex;
   color: black;
   border: 0px;
+  transition: 1s;
   width: fit-content;
 }
 
