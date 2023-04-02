@@ -16,6 +16,10 @@ button.whatsapp_icon_button:hover {
   transition: transform 600ms;
 }
 
+.whatsapp_icon_widget .top button:hover svg {
+  fill: red;
+}
+
 .whatsapp_icon_widget {
   display: none;
   position: fixed;
