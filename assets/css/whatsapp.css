@@ -58,7 +58,8 @@ div.whatsapp_icon_widget.close {
   right: 5px;
 }
 
-.whatsapp_icon_widget button:focus {
+.whatsapp_icon_widget button:focus,
+button.whatsapp_icon_button:focus {
   outline: none;
 }
 .whatsapp_icon_widget .footer {
