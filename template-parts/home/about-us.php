@@ -14,7 +14,7 @@
 
 <div class="about-us py-lg-5">
     <div class="d-flex flex-column flex-lg-row justify-content-between py-5 align-items-center">
-        <div class="col-lg-6 col-12 px-0 mx-0 image-view">
+        <div class="col-lg-6 col-12 px-0 image-view">
             <img class="about_img" src="<? echo $content_url; ?>" />
             <div class="overlay"></div>
         </div>

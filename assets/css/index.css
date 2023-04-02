@@ -125,10 +125,6 @@ nav ul li {
   text-decoration: none;
 }
 
-.about_btn_group {
-  margin-top: 30px;
-}
-
 .about_btn_group a.read_more_link {
   text-decoration: underline;
   color: rgb(84, 179, 84);

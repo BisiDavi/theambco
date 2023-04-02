@@ -64,7 +64,8 @@
   }
 
   .about-us .image-view {
-    width: 95%;
+    margin-left: -40px;
+    margin-top: 0px;
   }
 
   #about_us_content h3 {

@@ -14,9 +14,10 @@ readMoreAbout.addEventListener("click", () => {
     }
     readMoreAbout.textContent = "Read Less";
   } else if (!read_more) {
-    listItem.style.display = "none";
-    listItem.classList.remove("animate__fadeIn");
-    listItem.classList.add("animate__fadeOut");
-    readMoreAbout.textContent = "Read More";
+    listItem.classList.replace("animate__fadeIn", "animate__fadeOut");
+    setTimeout(() => {
+      listItem.style.display = "none";
+      readMoreAbout.textContent = "Read More";
+    }, 1000);
   }
 });
