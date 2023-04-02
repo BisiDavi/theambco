@@ -46,7 +46,9 @@
                     ?>
                 </div>
                 <div class="show-mobile">
-                    <img src=" <?php echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" />
+                    <a href="/">
+                        <img src=" <?php echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" />
+                    </a>
                     <div id="mobileMenu" class="hamburger-menu">
                         <a href="#" id="menuButton" class="menuButton">
                             <span class="menuText">

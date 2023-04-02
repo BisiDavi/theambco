@@ -22,8 +22,10 @@
             <footer class="footer py-5 text-white pr-md-5">
                 <div class="container d-flex flex-column flex-md-row  justify-content-between">
                     <div class="logo col-12 col-md-4  mb-4 mb-lg-0">
-                        <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
-                        <h6 class="my-lg-4 my-2">Swift access to high quality medical care </h6>
+                        <a href="/">
+                            <img src="<? echo get_template_directory_uri(); ?>/assets/images/logo_white.webp" alt="logo" height="60px" width="200px" />
+                        </a>
+                        <h6 class="my-lg-4 my-3">Swift access to high quality medical care </h6>
                         <div class="footer-social-links">
                             <a  target="_blank" href="<? echo $instagram;?>">
                                 <img src="<? echo get_template_directory_uri(); ?>/assets/images/instagram.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />

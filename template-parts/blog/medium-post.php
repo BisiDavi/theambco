@@ -1,3 +1,17 @@
+<?
+function debug_to_console($data, $context = 'Debug in Console') {
+
+    // Buffering to solve problems frameworks, like header() in this and not a solid return.
+    ob_start();
+
+    $output  = 'console.info(\'' . $context . ':\');';
+    $output .= 'console.log(' . json_encode($data) . ');';
+    $output  = sprintf('<script>%s</script>', $output);
+
+    echo $output;
+}
+
+?>
 <div class="medium-post container-fluid">
     <h3>Our Blog Post </h3>
     <div class="grid-post">
@@ -9,20 +23,33 @@
                 'paged' => get_query_var('paged'),
                 'nopaging' => false,
                 'category_name' => 'blog',
-                'ignore_sticky_posts' => false,  
-                'posts_per_page' => 12 
+                'ignore_sticky_posts' => 1,  
+                'posts_per_page' => 11,
+                'post__not_in' => array(240)
             );
 
             $parentPage = new WP_Query($pageArgs);
+            
+            debug_to_console($parentPage,'parentPage');
 
             if($parentPage->have_posts()){
                 $pinned_post_title = get_post_field('post_title',240);        
                 $pinned_post_link = get_post_field('post_name',240);        
-                $pinned_post_date = get_post_field('post_date',240);        
+                $pinned_post_date = get_post_field('post_date',240);   
+                $post_thumbnail_url = get_the_post_thumbnail_url(240);  
+              
+                debug_to_console($parentPage->query["paged"],'$parentPage->query["paged"]');
+
+                if($pinned_post_title && $parentPage->query["paged"] === 0){
+                    get_template_part('template-parts/blog/pinned_medium-post_item', 'pinned_medium-post_item',
+                array('post_title' => $pinned_post_title, 'post_date' => $pinned_post_date, 'post_thumbnail_url' =>$post_thumbnail_url ,'post_link' =>$pinned_post_link));
+                } 
+                
                 while($parentPage->have_posts()){
                     $parentPage->the_post();
                         get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
-                }
+                
+                    }
             } 
             wp_reset_postdata();
         ?>
