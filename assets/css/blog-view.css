@@ -115,7 +115,7 @@
 .blog-slider-view
   .swiper-slide
   img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-  height: 250px;
+  height: 300px;
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -193,7 +193,7 @@
     font-size: 13px;
   }
   .blog-slider-view .blog-view .blog-text-content {
-    height: 200px;
+    height: 250px;
   }
   .blog-slider-view h3 {
     font-size: 24px;
