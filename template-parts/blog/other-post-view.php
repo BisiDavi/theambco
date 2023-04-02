@@ -5,7 +5,7 @@
 
 <a class="other-post-view d-flex align-items-center my-3 gap-4" href="/<? echo $post->post_name; ?>">
     <div class="thumbnail mr-2">
-        <? echo the_post_thumbnail(); ?>
+        <? echo the_post_thumbnail('thumbnail'); ?>
     </div>
     <div class="text-content ml-2 py-lg-4 py-2 pr-1">
         <h6><? echo $post_title;  ?></h6>
