@@ -90,4 +90,11 @@
   .home_contact_us .wp-block-column h4 {
     font-size: 16px;
   }
+  .faq-item .faq-header span {
+    font-size: 20px;
+  }
+
+  .faq-item .faq-header {
+    font-size: 14px;
+  }
 }

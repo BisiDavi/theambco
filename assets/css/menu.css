@@ -172,7 +172,7 @@ ul#menu-header {
   background: transparent;
 }
 .active .menuText:before {
-  top: -10px;
+  top: -11px;
   left: 5px;
   animation: top-rot-in 0.5s forwards;
 }

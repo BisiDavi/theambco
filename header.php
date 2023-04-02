@@ -50,7 +50,7 @@
                     <div id="mobileMenu" class="hamburger-menu">
                         <a href="#" id="menuButton" class="menuButton">
                             <span class="menuText">
-                                <b>menu</b>
+                                <b></b>
                             </span>
                         </a>
                         <?php
