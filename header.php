@@ -31,7 +31,6 @@
 <body>
     <div class="theambulance">
         <header>
-
             <? get_template_part('template-parts/top-banner', 'top-banner'); ?>
             <nav class="container nav px-0">
                 <div class="desktop w-100 d-lg-flex align-items-center justify-content-between">
@@ -64,3 +63,4 @@
                 </div>
             </nav>
         </header>
+        <main>

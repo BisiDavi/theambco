@@ -54,6 +54,9 @@ function load_css()
     wp_register_style('statistics', get_template_directory_uri() . '/assets/css/statistics.css', array(), false, 'all');
     wp_enqueue_style('statistics');
 
+    wp_register_style('whatsapp', get_template_directory_uri() . '/assets/css/whatsapp.css', array(), false, 'all');
+    wp_enqueue_style('whatsapp');
+
     if(is_home()){
         wp_register_style('testimonial', get_template_directory_uri() . '/assets/css/testimonial.css', array(), false, 'all');
         wp_enqueue_style('testimonial');
