@@ -12,6 +12,7 @@
 >
     <div class="icon">
         <img src="<? echo $customer_care_icon; ?>" alt="<? echo $customer_representative_name; ?>" />
+        <? include get_theme_file_path("/assets/images/whatsapp.svg"); ?>
     </div>
     <div class="text-view">
         <h5><? echo $customer_representative_name; ?></h5>

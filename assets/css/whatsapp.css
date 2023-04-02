@@ -6,22 +6,41 @@
   border-radius: 50%;
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 100;
+}
+
+button.whatsapp_icon_button:hover {
+  opacity: 0.5;
 }
 
 .whatsapp_icon_widget {
   display: none;
   position: fixed;
   bottom: 120px;
-  left: 20px;
+  right: 20px;
   background-color: white;
   border-radius: 10px;
   z-index: 100;
+  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px) scale(0.8);
+  transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 300ms ease-in;
 }
 
 .whatsapp_icon_widget.active {
   display: block;
+}
+
+.whatsapp_icon_widget.animate {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 500ms ease-in;
 }
 
 .whatsapp_icon_widget .top {
@@ -39,7 +58,7 @@
 }
 
 .whatsapp_icon_widget .content {
-  padding: 20px;
+  padding: 0px 20px;
 }
 .whatsapp_icon_widget:before {
   background-color: #fff;
@@ -59,20 +78,39 @@
   display: flex;
   align-items: center;
   color: black;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 
 .whatsapp_icon_widget .icon {
   margin: 0px 20px;
+  position: relative;
 }
 
 .whatsapp_icon_widget .icon img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #eee;
 }
 
-.whatsapp_icon_widget .text-view h5 {
+.whatsapp_icon_widget h5,
+.whatsapp_icon_widget h3 {
   font-weight: 600;
+}
+
+.whatsapp_icon_widget a.customer-care:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.whatsapp_icon_widget p {
+  margin-bottom: 0px;
+}
+
+.whatsapp_icon_widget .icon svg {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  height: 20px;
+  width: 20px;
 }
