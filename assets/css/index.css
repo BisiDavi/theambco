@@ -8,7 +8,9 @@ body {
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+main {
+  position: relative;
+}
 body {
   height: 100%;
   width: 100%;

@@ -1,11 +1,11 @@
 .whatsapp_icon_button {
   background-color: #23d366;
   border: none;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-}
-
-.whatsapp_icon_button svg {
-  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
 }
