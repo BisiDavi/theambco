@@ -19,7 +19,6 @@
                 $pinned_post_title = get_post_field('post_title',240);        
                 $pinned_post_link = get_post_field('post_name',240);        
                 $pinned_post_date = get_post_field('post_date',240);        
-                $pinned_post_thumbnail_url = get_the_post_thumbnail_url(240, 'post-thumbnail');        
                 while($parentPage->have_posts()){
                     $parentPage->the_post();
                         get_template_part('template-parts/blog/medium-post_item', 'medium-post_item');
