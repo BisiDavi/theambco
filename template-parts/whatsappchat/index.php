@@ -32,6 +32,9 @@ function debug_to_console($data, $context = 'Debug in Console') {
             <div class="top">
                 <h3><? echo $title; ?></h3>
                 <p><? echo $description; ?></p>
+                <button id="closeWhatsappBtn">
+                    <? include get_theme_file_path("/assets/images/cancel.svg"); ?>
+                </button>
             </div>
             <div class="content">
                 <? get_template_part('template-parts/whatsappchat/customer-care-view','customer-care'); ?>
