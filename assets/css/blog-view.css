@@ -68,7 +68,6 @@
   color: black;
   background-color: #f5f5f5;
   border-radius: 10px;
-  height: 120px;
 }
 .other-post-view .thumbnail img {
   height: 120px;
@@ -181,7 +180,7 @@
   }
   .blog_view_page h2 {
     font-size: 24px;
-    margin: 20px auto;
+    margin: 10px 20px;
   }
   .blog_image_view img {
     max-height: 400px;

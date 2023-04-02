@@ -7,7 +7,7 @@
     <div class="thumbnail mr-2">
         <? echo the_post_thumbnail(); ?>
     </div>
-    <div class="text-content ml-2 py-4 pr-1">
+    <div class="text-content ml-2 py-lg-4 py-2 pr-1">
         <h6><? echo $post_title;  ?></h6>
         <p><? echo $post_excerpt; ?></p>
     </div>
