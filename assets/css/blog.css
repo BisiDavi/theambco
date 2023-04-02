@@ -21,7 +21,7 @@
 
 .medium-post .post-view img {
   width: 300px;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -44,6 +44,7 @@
 
 .medium-post .post-view p {
   font-size: 14px;
+  justify-content: center;
 }
 
 .medium-post .post-view {

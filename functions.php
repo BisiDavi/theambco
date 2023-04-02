@@ -138,4 +138,5 @@ register_nav_menus(array(
 add_image_size('blog-large', 1000, 5500, false);
 add_image_size('blog-small', 81, 75, true);
 add_image_size('thumbnail', 100, 100, true);
-add_image_size('blog-thumbnail', 200, 200, true);
+add_image_size('blog-thumbnail', 300, 300, true);
+add_image_size('gallery', 400, 400, true);
