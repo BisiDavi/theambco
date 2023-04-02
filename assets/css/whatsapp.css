@@ -63,9 +63,6 @@ div.whatsapp_icon_widget.close {
   border-top: 1px solid #e6e6e6;
 }
 
-.whatsapp_icon_widget .content {
-  padding: 0px 20px;
-}
 .whatsapp_icon_widget:before {
   background-color: #fff;
 }
@@ -84,7 +81,8 @@ div.whatsapp_icon_widget.close {
   display: flex;
   align-items: center;
   color: black;
-  margin: 15px 0px;
+  margin: 10px 0px;
+  padding: 5px 20px;
 }
 
 .whatsapp_icon_widget .icon {
