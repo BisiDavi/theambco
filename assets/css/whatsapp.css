@@ -9,3 +9,48 @@
   left: 20px;
   z-index: 100;
 }
+
+.whatsapp_icon_widget {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  left: 20px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.whatsapp_icon_widget.active {
+  display: block;
+}
+
+.whatsapp_icon_widget .top {
+  background-color: #23d366;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.whatsapp_icon_widget .footer {
+  color: black;
+  padding: 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.whatsapp_icon_widget .content {
+  padding: 20px;
+}
+.whatsapp_icon_widget:before {
+  background-color: #fff;
+}
+
+.whatsapp_icon_widget:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 24px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg);
+}
