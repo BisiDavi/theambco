@@ -106,7 +106,7 @@ nav ul li {
   width: fit-content;
 }
 
-.about_us_btn {
+.white_green {
   background-color: white;
   color: rgb(84, 179, 84);
   border-radius: 10px;
@@ -115,9 +115,10 @@ nav ul li {
   margin: 20px 0px;
   display: flex;
   width: fit-content;
+  transition: 1s;
 }
 
-.about_us_btn:hover,
+.white_green:hover,
 .round-btn:hover {
   background-color: rgb(84, 179, 84);
   color: white;
@@ -272,13 +273,14 @@ main.container-fluid {
   font-size: 32px;
 }
 
-.services-view a.round-btn {
+a.round-btn {
   background-color: rgb(84, 179, 84);
   color: white;
   margin-top: 20px;
   border: 1px solid rgb(84, 179, 84);
+  transition: 1s;
 }
-.services-view a.round-btn:hover {
+a.round-btn:hover {
   color: rgb(84, 179, 84);
   background-color: white;
   border: 1px solid rgb(84, 179, 84);

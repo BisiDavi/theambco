@@ -15,7 +15,7 @@
 
 <div class="home_contact_us">
  <? echo $content_post; ?>
- <a class="contact_us d-flex mx-auto about_us_btn" href="/contact">
+ <a class="contact_us d-flex mx-auto white_green" href="/contact">
     Contact Us
 </a>
 </div>

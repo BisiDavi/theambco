@@ -6,11 +6,6 @@
   background-color: rgba(0, 77, 67, 0.3);
 }
 
-.about-us-view h3,
-.our-mission-view h3.text-center {
-  text-decoration: underline;
-}
-
 .about-us-view p {
   font-size: 18px;
 }
