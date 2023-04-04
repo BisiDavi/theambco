@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.heroSwiper {
+  margin-top: 25px;
+}
+
 .overlay {
   background-color: #0000007a;
   z-index: 2;
