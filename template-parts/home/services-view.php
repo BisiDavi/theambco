@@ -4,7 +4,7 @@
         'cat' => 15, 
         'order' => 'ASC',
         'orderby' => 'date',
-        'post__not_in' > array(142),
+        'post__not_in' => array(142),
         'posts_per_page' => 5,
     );
     $servicesPost = new WP_Query($postArgs);

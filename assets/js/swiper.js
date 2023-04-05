@@ -5,6 +5,7 @@ let swiper = new Swiper(".heroSwiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiperButtonNext",

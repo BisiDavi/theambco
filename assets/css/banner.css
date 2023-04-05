@@ -21,6 +21,18 @@
   margin: 50px 0px 20px 0px;
 }
 
+.heroSwiper .swiper-pagination-bullets {
+  bottom: 0px;
+  left: 0px;
+  width: unset;
+}
+
+.heroSwiper span.swiper-pagination-bullet {
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+}
+
 .overlay {
   background-color: #0000007a;
   z-index: 2;
