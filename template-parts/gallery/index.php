@@ -12,7 +12,7 @@
 
 <div class="container-fluid gallery py-5">
     <h3 class="text-center mb-5">Our Gallery</h3>
-    <div class="grid gallery-view ">
+    <div class="grid gallery-view">
         <?
             if($galleryPost->have_posts()){
                 while($galleryPost->have_posts()){

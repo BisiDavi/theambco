@@ -10,8 +10,15 @@
   position: relative;
 }
 
+.swiper-slide .image_view img {
+  height: 500px;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .heroSwiper {
-  margin-top: 25px;
+  margin: 50px 0px 20px 0px;
 }
 
 .overlay {

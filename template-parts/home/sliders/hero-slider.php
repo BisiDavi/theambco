@@ -18,9 +18,9 @@
 
 <div class="swiper-slide slider_<? echo $index; ?>" id="swiperSlider">
     <div class="d-lg-flex flex-column flex-lg-row align-items-center content banner justify-content-between">
-        <div class="image_view col-lg-6 px-0 col-12 <?php echo $imageOrder; ?>">
+        <div class="image_view col-lg-5 px-0 col-12 <?php echo $imageOrder; ?>">
             <div class="overlay"></div>
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail("hero-banner"); ?>
             <div class="mobile-hero-text">
                 <?php the_title(' <h3 class="title">', '</h3>'); ?>
                 <?php the_content(); ?>
