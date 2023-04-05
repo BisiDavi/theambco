@@ -57,9 +57,10 @@ nav ul li {
 
 /* swiper_slider */
 .swiper_slider {
-  padding-top: 40px;
-  margin-top: 50px;
+  padding-top: 150px;
+  margin-top: 0;
   background-color: white;
+  height: 100vh;
 }
 .swiper-pagination-bullet {
   margin: 0px 5px;
