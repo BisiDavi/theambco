@@ -347,3 +347,26 @@ footer.footer ul li a {
   flex-wrap: wrap;
   display: flex;
 }
+
+/* loader */
+.loader_animation {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: #adff2f96;
+  z-index: 1000;
+  display: flex;
+}
+
+.loader_animation img {
+  margin: auto;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
