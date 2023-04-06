@@ -56,8 +56,11 @@ nav ul li {
 }
 
 /* swiper_slider */
+.hero_banner {
+  padding-top: 120px;
+  background-color: white;
+}
 .swiper_slider {
-  padding-top: 80px;
   margin-top: 0;
   background-color: white;
   height: 100vh;

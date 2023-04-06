@@ -104,6 +104,51 @@
 }
 
 @media (max-width: 768px) {
+  .swiper_slider {
+    display: none;
+  }
+  .mobile_home_banner img {
+    height: 400px;
+    width: 100%;
+  }
+  .mobile_home_banner {
+    position: relative;
+  }
+  .hero_banner {
+    padding-top: 80px;
+  }
+  .mobile_home_banner .overlay {
+    border-radius: 0px;
+  }
+  .mobile_home_banner .text-content {
+    background-color: white;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+  }
+  .mobile_home_banner .text-content p {
+    text-align: center;
+    line-height: 23px;
+  }
+  .mobile_home_banner .text-content h4 {
+    display: flex;
+    margin: 0px auto;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .mobile_home_banner .text_wrapper {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    z-index: 10;
+  }
   .mobile-hero-text {
     display: block;
     position: absolute;

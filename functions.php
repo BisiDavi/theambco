@@ -92,7 +92,9 @@ function load_js()
 {
     wp_enqueue_script('jquery');
     
-    wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
+    if(wp_is_mobile()){
+        wp_enqueue_script('menu', get_template_directory_uri() . '/assets/js/menu.js', array(), '1.0.0', true);
+    }
     
     wp_enqueue_script('whatsapp', get_template_directory_uri() . '/assets/js/whatsapp.js', array(), '1.0.0', true);
     
@@ -104,7 +106,9 @@ function load_js()
         // ScrollTrigger - with gsap.js passed as a dependency
         wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
         wp_enqueue_script('swiper-bundle', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array('jquery'), '1.0.0', true);
-        wp_enqueue_script('swiper',  get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle','gsap-js'), '1.0.0', true);
+        if(!wp_is_mobile()){
+            wp_enqueue_script('swiper',  get_template_directory_uri() . '/assets/js/swiper.js', array('swiper-bundle','gsap-js'), '1.0.0', true);
+        }
     }
     
     if(is_home()){

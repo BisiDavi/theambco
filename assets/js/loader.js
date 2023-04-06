@@ -6,5 +6,5 @@ window.addEventListener("load", () => {
       "animate__fadeInLeft",
       "animate__fadeOutRight"
     );
-  }, 1000);
+  }, 2000);
 });

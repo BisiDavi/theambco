@@ -30,7 +30,7 @@
 
 <body>
     <div class="theambulance">
-    <? get_template_part('template-parts/loader', 'loader'); ?>
+        <? get_template_part('template-parts/loader', 'loader'); ?>
 
         <header>
             <? get_template_part('template-parts/top-banner', 'top-banner'); ?>
