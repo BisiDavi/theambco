@@ -24,8 +24,5 @@
         <div class="role">
             <? echo $position; ?>
         </div>
-        <div class="leader-body">
-            <? echo $content_post; ?>
-        </div>
     </div>
 </div>

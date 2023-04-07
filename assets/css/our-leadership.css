@@ -80,6 +80,12 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
+.our_team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 10px;
+}
+
 .our_team h3 {
   font-size: 30px;
   font-weight: bold;

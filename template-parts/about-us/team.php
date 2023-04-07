@@ -12,7 +12,7 @@
     $role = get_post_field("role",$post->ID);
 ?>
 
-<div class="teammate col-12 col-md-4">
+<div class="teammate">
     <div class="image-view">
         <? echo the_post_thumbnail(); ?>
     </div>

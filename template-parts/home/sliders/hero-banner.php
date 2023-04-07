@@ -52,26 +52,4 @@ function debug_to_console($data, $context = 'Debug in Console') {
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="mobile_home_banner">
-        <div class="overlay"></div>
-       <?
-            $idx = 0;
-            if($sliderPost->have_posts()){
-                $img =get_the_post_thumbnail_url($sliderPost->post->ID);
-                $post_title = $sliderPost->post->post_title;
-                $post_content = $sliderPost->post->post_content;
-                debug_to_console($sliderPost);
-                 ?>
-              <img 
-                src="<? echo $img; ?>"
-                alt="The Ambulance Company"/> 
-                <div class="text_wrapper">
-                    <div class="text-content">
-                        <h4 class=""><? echo $post_title; ?></h4>
-                        <p><? echo $post_content; ?></p>
-                    </div>
-                </div> 
-            <?}
-       ?>
-    </div>
 </div>
