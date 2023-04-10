@@ -6,7 +6,7 @@
     <input 
         id="email"
         name="email"
-        placeholder="Email"
+        placeholder="📧 Email"
         type="email"
         class="form-control col-9" 
         required
