@@ -1,4 +1,4 @@
-<form class="newsletter-form d-flex align-items-center mx-lg-5 m-0 my-lg-4 pb-5 pb-lg-0"
+<form class="newsletter-form d-flex align-items-center my-lg-4"
     action="https://formspree.io/f/xjvdabzn"
     method="POST"
 >
@@ -9,6 +9,7 @@
         placeholder="Email"
         type="email"
         class="form-control col-9" 
+        required
     />
-    <button class="submit round-btn mx-auto mt-4" type="submit">Subscribe</button>
+    <button class="submit round-btn mx-3 py-2" type="submit">Subscribe</button>
 </form>
