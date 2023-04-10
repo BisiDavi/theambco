@@ -2,7 +2,6 @@
     action="https://formspree.io/f/xjvdabzn"
     method="POST"
 >
-
     <? 
         $json = file_get_contents(__DIR__ . '/contact-form.json');
         $jsonData = json_decode($json, true);
@@ -18,7 +17,7 @@
                         }else if($formElementData['type'] === 'select'){
                             get_template_part('template-parts/form/select', 'input', array('input' => $formElementData));
                         }
-                    
+                    }
                 ?>
             </div>
     <? } ?>
