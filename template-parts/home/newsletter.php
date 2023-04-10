@@ -1,15 +1,9 @@
 <? 
-    $newletterPostArgs = array(
-        'post_type' => 'post',
-        'p' => 611
-    );
-    
-    $newletterPost = new WP_Query($newletterPostArgs);
-
-    if($newletterPost->have_posts()){ 
-        while($newletterPost->have_posts()){
-            $newletterPost->the_post(); ?>
-            .n
-       <? }
-    }
+    $post_title = get_post_field('post_title', 32);
+    $post_img_url = get_the_post_thumbnail_url(611, 'post-thumbnail');
+    $post_content = get_post_field('post_content',611); 
 ?>
+
+<div class="newsletter">
+    <img src="<? echo $post_img_url; ?>" alt="<? echo $post_title; ?>" />
+</div>

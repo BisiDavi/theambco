@@ -60,6 +60,9 @@ function load_css()
     if(is_home()){
         wp_register_style('testimonial', get_template_directory_uri() . '/assets/css/testimonial.css', array(), false, 'all');
         wp_enqueue_style('testimonial');
+
+        wp_register_style('newsletter', get_template_directory_uri() . '/assets/css/newsletter.css', array(), false, 'all');
+        wp_enqueue_style('newsletter');
     }
 
     if(is_page('blog')){
