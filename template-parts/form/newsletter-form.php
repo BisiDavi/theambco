@@ -18,9 +18,9 @@
                         }else if($formElementData['type'] === 'select'){
                             get_template_part('template-parts/form/select', 'input', array('input' => $formElementData));
                         }
-                    
+                    }
                 ?>
             </div>
     <? } ?>
-    <button class="submit round-btn mx-auto mt-4" type="submit">Submit</button>
+    <button class="submit round-btn mx-auto mt-4" type="submit">Subscribe</button>
 </form>

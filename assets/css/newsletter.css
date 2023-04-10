@@ -1,4 +1,19 @@
+.newsletter {
+  position: relative;
+  height: 400px;
+}
 .newsletter img {
   height: 100%;
   width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.newsletter .overlay {
+  border-radius: 0px;
+}
+
+.newsletter .text-content {
+  z-index: 5;
 }
