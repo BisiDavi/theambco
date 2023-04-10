@@ -31,7 +31,6 @@
 <body>
     <div class="theambulance">
         <? get_template_part('template-parts/loader', 'loader'); ?>
-
         <header>
             <? get_template_part('template-parts/top-banner', 'top-banner'); ?>
             <nav class="container nav px-0">
