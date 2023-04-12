@@ -6,7 +6,7 @@
 html,
 body {
   position: relative;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 main {
   position: relative;
@@ -28,7 +28,7 @@ li.current-menu-item a {
 /* nav */
 nav li a {
   text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #2e313a;
 }
 nav ul li {
@@ -45,7 +45,7 @@ nav ul {
 nav ul li {
   margin: 0px 40px;
   font-size: 20px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
@@ -180,7 +180,7 @@ nav ul li {
 .home_contact_us .wp-block-columns {
   gap: 140px;
   justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #about_us_content h3 {
@@ -200,16 +200,16 @@ nav ul li {
 
 /* supporters */
 .supporters h3 {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   text-align: center;
   font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* contact-us-view */
 .contact-us-view {
   background-color: rgba(219, 204, 72, 0.933);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .contact-us-view .text-content {
@@ -325,7 +325,7 @@ a.round-btn:hover {
 footer.footer {
   background: #3f3d56;
   padding: 2.5rem 1.5rem 0.5rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 footer.footer h4 {
