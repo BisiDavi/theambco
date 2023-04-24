@@ -10,6 +10,7 @@
 
 <?
     $name = get_post_field('name', $post->ID);
+    $testimonial = wp_trim_words($post->post_content, 20, '...');
 ?>
 
 <div class="swiper-slide testimonial">

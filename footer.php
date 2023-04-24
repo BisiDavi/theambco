@@ -42,18 +42,20 @@
                         </div>
                     </div>
                     <div class="service_company justify-content-lg-between col-12 col-md-4 d-flex flex-md-column flex-lg-row">
-                        <div class="services ">
-                            <h4>OUR SERVICES</h4>
-                            <ul>
-                                <? foreach ($service_menu as $item ) { ?>
-                                    <li> 
-                                        <a href="<? echo $item->url; ?>">
-                                            <? echo $item->post_title; ?> 
-                                        </a>
-                                    </li>
-                                <?  } ?>
-                            </ul>
-                        </div>
+                       <? if (!wp_is_mobile()){ ?>
+                            <div class="services ">
+                                <h4>OUR SERVICES</h4>
+                                <ul>
+                                    <? foreach ($service_menu as $item ) { ?>
+                                        <li> 
+                                            <a href="<? echo $item->url; ?>">
+                                                <? echo $item->post_title; ?> 
+                                            </a>
+                                        </li>
+                                    <?  } ?>
+                                </ul>
+                            </div>
+                        <? } ?>
                         <div class="company mx-5 mx-md-0">
                             <h4>COMPANY</h4>
                             <ul>
@@ -67,10 +69,12 @@
                             </ul>
                         </div>
                     </div>
+                    <? if(!wp_is_mobile()){ ?>
                     <div class="contact  col-md-4 px-md-0 col-12 ml-lg-5">
                         <h4>CONTACT</h4>
                         <? echo $contact_post; ?>
                     </div>
+                    <? } ?>
                 </div>
             </footer>
             <?php wp_footer(); ?>
