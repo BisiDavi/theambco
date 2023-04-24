@@ -16,10 +16,11 @@
     $youtube_link = get_post_field('youtube',305);
     $twitter_link = get_post_field('twitter',305);
     $instagram = get_post_field('instagram',305);
+    $banner_bg = get_post_field('color_1', 624);
 ?>
             </main>
   <? get_template_part('template-parts/whatsappchat/index', 'whatsappchat'); ?>
-            <footer class="footer py-5 text-white pr-md-5">
+            <footer class="footer py-5 text-white pr-md-5" style="background-color:<? echo $banner_bg; ?>">
                 <div class="container d-flex flex-column flex-md-row  justify-content-between">
                     <div class="logo col-12 col-md-4  mb-4 mb-lg-0">
                         <a href="/">

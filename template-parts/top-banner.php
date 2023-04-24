@@ -1,6 +1,9 @@
-<? $post_title = get_post_field('post_title',133);?>
+<? 
+    $post_title = get_post_field('post_title',133);
+    $banner_bg = get_post_field('color_1', 624);
+?>
 
-<div class="top-banner d-flex">
+<div class="top-banner d-flex" style="background-color:<? echo $banner_bg; ?>">
     <div class="container emergency_line d-flex">
         <div class="text-center d-flex align-items-center gap-4">
             <img src="<? echo get_template_directory_uri(); ?>/assets/images/ambulance.svg" width="20px" height="20px"  class="mx-2" alt="ambulance" />
